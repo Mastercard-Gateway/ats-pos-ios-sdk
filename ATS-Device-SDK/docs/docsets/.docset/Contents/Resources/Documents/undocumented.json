@@ -1,96 +1,103 @@
 {
   "warnings": [
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 13,
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 29,
       "symbol": "ATSBluetoothAdapter.Event.started",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 14,
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 30,
       "symbol": "ATSBluetoothAdapter.Event.atsConnected",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 15,
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 31,
       "symbol": "ATSBluetoothAdapter.Event.deviceConnected",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 16,
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 32,
       "symbol": "ATSBluetoothAdapter.Event.deviceDisconnected",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 17,
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 33,
       "symbol": "ATSBluetoothAdapter.Event.atsDisconnected",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 18,
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 34,
       "symbol": "ATSBluetoothAdapter.Event.stopped",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 19,
-      "symbol": "ATSBluetoothAdapter.Event.error",
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 35,
+      "symbol": "ATSBluetoothAdapter.Event.error(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 28,
-      "symbol": "ATSBluetoothAdapter.Mode.static",
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 44,
+      "symbol": "ATSBluetoothAdapter.Mode.static(port:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 29,
-      "symbol": "ATSBluetoothAdapter.Mode.roaming",
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 45,
+      "symbol": "ATSBluetoothAdapter.Mode.roaming(atsIP:atsPort:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 36,
-      "symbol": "ATSBluetoothAdapter.Error.unableToGetStreamsToHost",
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 52,
+      "symbol": "ATSBluetoothAdapter.Error.unableToGetStreamsToHost(_:_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 37,
-      "symbol": "ATSBluetoothAdapter.Error.unableToLocateDevice",
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 53,
+      "symbol": "ATSBluetoothAdapter.Error.unableToLocateDevice(named:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 38,
-      "symbol": "ATSBluetoothAdapter.Error.unableToConnect",
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 54,
+      "symbol": "ATSBluetoothAdapter.Error.unableToConnect(device:protocol:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
-      "line": 58,
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 75,
       "symbol": "ATSBluetoothAdapter.running",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK/ATS-Device-SDK/ATSBluetoothAdapter.swift",
+      "line": 81,
+      "symbol": "ATSBluetoothAdapter.deinit",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/e0350161/simplify/ats-ios-sdk/ATS-Device-SDK"
+  "source_directory": "/Users/e035016/dev/ats-ios-sdk/ATS-Device-SDK"
 }
