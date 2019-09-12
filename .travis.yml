@@ -1,9 +1,5 @@
 language: swift
 
-branches:
- only:
- - master
-
 xcode_workspace: ATSSDK-iOS.xcworkspace
 xcode_scheme: All
 osx_image: xcode10.3
