@@ -1,0 +1,21 @@
+{% macro xmlName variable %}{% if variable.annotations.xmlName %}{{ variable.annotations.xmlName }}{% else %}{{ variable.name }}{% endif %}{% endmacro %}
+
+{% for type in types.implementing.XMLSerializable|annotated:"Auto_XMLSerializable" %}
+// sourcery:file:XMLSerializable/{{ type.name|replace:".","_" }}+XMLSerializable
+import Foundation
+
+extension {{ type.name }} {
+    func toXML(_ name: String, encoder: XMLEncoderProtocol) -> XMLElement {
+        let xml = XMLElement(name: name)
+        {% for variable in type.instanceVariables|annotated:"xmlValue" %}xml.valueString = encoder.encodeValue({{variable.name}})
+        {% endfor %}
+        {% for variable in type.instanceVariables|annotated:"xmlAttribute" %}xml.attributes["{% call xmlName variable %}"] = encoder.encodeValue({{variable.name}})
+        {% endfor %}
+        {% for variable in type.instanceVariables|annotated:"xmlElement" %}
+        {% if variable.typeName.isOptional %}if let {{ variable.name }} = {{ variable.name }} { {% endif %}{% if variable.typeName.isArray %}xml.addChildren({{ variable.name }}.map {encoder.encodeChild($0, named: "{% call xmlName variable %}")}){% else %}xml.addChild(encoder.encodeChild({{ variable.name }}, named: "{% call xmlName variable %}")){% endif %}{% if variable.typeName.isOptional %} }{% endif %}
+        {% endfor %}
+        return xml
+    }
+}
+// sourcery:end
+{% endfor %}

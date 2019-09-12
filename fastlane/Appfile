@@ -1,0 +1,7 @@
+app_identifier "com.mastercard.omi.ats-sample-app" # The bundle identifier of your app
+apple_id "simplify_ios_team@mastercard.com" # Your Apple email address
+team_id "659EW42358"
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

@@ -1,0 +1,23 @@
+{% macro xmlName variable %}{% if variable.annotations.xmlName %}{{ variable.annotations.xmlName }}{% else %}{{ variable.name }}{% endif %}{% endmacro %}
+
+
+
+{% for type in types.implementing.XMLParsable|annotated:"Auto_XMLParsable" %}
+// sourcery:file:XMLParsable/{{ type.name|replace:".","_" }}+XMLParsable
+import Foundation
+
+extension {{ type.name }} {
+    init(xml: XMLElement, decoder: XMLDecoderProtocol) throws {
+
+        {% for variable in type.instanceVariables %}{% if not variable.typeName.isArray and not variable.typeName.isOptional %}guard let {{ variable.name }}: {{ variable.typeName.unwrappedTypeName }}{% else %} let {{ variable.name }}: {{ variable.typeName.name }}{% endif %} =
+            {% if variable.annotations.xmlValue %}decoder.decodeValue(xml.valueString){% endif %}
+            {% if variable.annotations.xmlAttribute %}decoder.decodeValue(xml.attributes["{% call xmlName variable %}"]){% endif %}
+            {% if variable.annotations.xmlElement %}{% if variable.type.implements.XMLParsable or variable.typeName.array.elementType.implements.XMLParsable %}try {% endif %}{% if variable.typeName.isArray %}xml.getChildren(named: "{% call xmlName variable %}").compactMap { {% if variable.typeName.array.elementType.implements.XMLParsable %}try {% endif %} decoder.decodeChild($0) }{% else %}decoder.decodeChild(xml.getFirstChild(named: "{% call xmlName variable %}")){% endif %}{% endif %}
+            {% if not variable.typeName.isArray and not variable.typeName.isOptional %} else { throw XMLParsableError.missingOrInvalidTypeFor("{{ variable.name }}", {{ variable.typeName.name }}.self) }{% endif %}
+        {% endfor %}
+
+        self.init({% for variable in type.instanceVariables %}{{ variable.name }}: {{ variable.name }}{% if not forloop.last %}, {% endif %}{% endfor %})
+    }
+}
+// sourcery:end
+{% endfor %}

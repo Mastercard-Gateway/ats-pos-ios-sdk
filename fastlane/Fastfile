@@ -1,0 +1,48 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+import "Fastfile-ReleaseTools"
+
+default_platform(:ios)
+xcversion(version: "~> 10")
+
+platform :ios do
+
+  desc "Tests all frameworks"
+  lane :test do
+    scan(scheme: "All")
+    xcov(
+      workspace: "ATSSDK-iOS.xcworkspace",
+      scheme: "All",
+      output_directory: "fastlane/test_output/xcov",
+      ignore_file_path: '.xcovignore'
+    )
+  end
+
+  desc "Update generated documentation"
+  lane :update_docs do
+    Actions.verify_gem!('jazzy')
+    # Fastlane runs in the ./fastlane foolder, so we need to go up a directory
+    Dir.chdir("../ATS-Client-SDK") do
+      Actions.sh("jazzy")
+    end
+    Dir.chdir("../ATS-Device-SDK") do
+      Actions.sh("jazzy")
+    end
+    Dir.chdir("../ATS-Common") do
+      Actions.sh("jazzy")
+    end
+  end
+end

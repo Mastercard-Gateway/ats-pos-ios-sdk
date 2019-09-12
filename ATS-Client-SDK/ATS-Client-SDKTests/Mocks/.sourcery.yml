@@ -1,0 +1,8 @@
+sources:
+- './ATS-Client-SDK'
+templates:
+- Templates
+output:
+  path: Generated
+args:
+  prune: true

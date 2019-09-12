@@ -1,0 +1,5 @@
+{% for type in types.implementing.XMLRoot|annotated:"Auto_XMLRoot" %}
+extension {{ type.name }} {
+    static var RootElementName: String { return "{% if type.annotations.xmlName %}{{ type.annotations.xmlName }}{% else %}{{ type.localName }}{% endif %}" }
+}
+{% endfor %}

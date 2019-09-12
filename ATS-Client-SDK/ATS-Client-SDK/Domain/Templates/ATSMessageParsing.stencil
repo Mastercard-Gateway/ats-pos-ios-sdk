@@ -1,0 +1,28 @@
+{% for type in types.implementing.ATSMessageParserProtocol %}
+
+// sourcery:inline:{{ type.name }}.AutoParsing
+        switch xml.name {
+        {% for type in types.implementing.ATSMessage %}
+        case "{% if type.annotations.xmlName %}{{ type.annotations.xmlName }}{% else %}{{ type.name }}{% endif %}":
+            return try {{ type.name }}(xml: xml, decoder: decoder){% endfor %}
+        default:
+            throw ATSMessageParserError.unrecognizedXMLTag(xml.name)
+        }
+// sourcery:end
+
+{% endfor %}
+
+// sourcery:inline:Auto_ATSParsing
+{% for type in types.implementing.ATSMessage %}
+extension {{ type.name }} {
+  public init(xml: XMLElement) throws {
+      try self.init(xml: xml, decoder: XMLDecoder())
+  }
+
+  public func toXML() -> XMLElement {
+      return toXML(encoder: XMLEncoder())
+  }
+}
+
+{% endfor %}
+// sourcery:end

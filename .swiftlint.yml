@@ -1,0 +1,3 @@
+included:
+  - ATSSDK-iOS/ATS-Comms-SDK/Domain/Generated
+  - ATSSDK-iOS/ATS-Comms-SDK/Domain/Objects

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ATS-Common/../ATS-Client-SDK/ATS-Client-SDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ATS-Common/ATS-Common.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ATSSDK-iOS/../ATS-Device-SDK/ATS-Device-SDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ATSSDK-Sample/ATSSDK-Sample.xcodeproj">
+   </FileRef>
+</Workspace>

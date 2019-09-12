@@ -1,0 +1,1491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B7F2A248210A5D6200FAE75C /* Sourcery Generate Domain Serialization */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B7F2A249210A5D6200FAE75C /* Build configuration list for PBXAggregateTarget "Sourcery Generate Domain Serialization" */;
+			buildPhases = (
+				B7F2A24C210A5D6A00FAE75C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Sourcery Generate Domain Serialization";
+			productName = "Sourcery Generate Domain Serialization";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		B70F11F2210B4BA900DBB05F /* AutoMockable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = B70F11F1210B4BA900DBB05F /* AutoMockable.stencil */; };
+		B70F11F6210B4C7300DBB05F /* MockATSClientDelegate.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F11F5210B4C7300DBB05F /* MockATSClientDelegate.generated.swift */; };
+		B7BBF0E3210B5AAF00BC74CB /* Auto_XMLRoot.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF054210B5AAF00BC74CB /* Auto_XMLRoot.generated.swift */; };
+		B7BBF0E4210B5AAF00BC74CB /* CardValueDRType+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF056210B5AAF00BC74CB /* CardValueDRType+XMLParsable.generated.swift */; };
+		B7BBF0E5210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF057210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLParsable.generated.swift */; };
+		B7BBF0E6210B5AAF00BC74CB /* ServiceResponse_Submission+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF058210B5AAF00BC74CB /* ServiceResponse_Submission+XMLParsable.generated.swift */; };
+		B7BBF0E7210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF059210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLParsable.generated.swift */; };
+		B7BBF0E8210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF05A210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLParsable.generated.swift */; };
+		B7BBF0E9210B5AAF00BC74CB /* ServiceResponse+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF05B210B5AAF00BC74CB /* ServiceResponse+XMLParsable.generated.swift */; };
+		B7BBF0EA210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF05C210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLParsable.generated.swift */; };
+		B7BBF0EB210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF05D210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLParsable.generated.swift */; };
+		B7BBF0EC210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF05E210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLParsable.generated.swift */; };
+		B7BBF0ED210B5AAF00BC74CB /* DeviceRequest_Output+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF05F210B5AAF00BC74CB /* DeviceRequest_Output+XMLParsable.generated.swift */; };
+		B7BBF0EE210B5AAF00BC74CB /* ServiceResponse_Versions+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF060210B5AAF00BC74CB /* ServiceResponse_Versions+XMLParsable.generated.swift */; };
+		B7BBF0EF210B5AAF00BC74CB /* TotalAmountType+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF061210B5AAF00BC74CB /* TotalAmountType+XMLParsable.generated.swift */; };
+		B7BBF0F0210B5AAF00BC74CB /* DeviceResponse_Input+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF062210B5AAF00BC74CB /* DeviceResponse_Input+XMLParsable.generated.swift */; };
+		B7BBF0F1210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF063210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLParsable.generated.swift */; };
+		B7BBF0F2210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF064210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLParsable.generated.swift */; };
+		B7BBF0F3210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF065210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLParsable.generated.swift */; };
+		B7BBF0F4210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF066210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLParsable.generated.swift */; };
+		B7BBF0F5210B5AAF00BC74CB /* ATSResponse+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF067210B5AAF00BC74CB /* ATSResponse+XMLParsable.generated.swift */; };
+		B7BBF0F6210B5AAF00BC74CB /* DeviceRequest_Input+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF068210B5AAF00BC74CB /* DeviceRequest_Input+XMLParsable.generated.swift */; };
+		B7BBF0F7210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF069210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLParsable.generated.swift */; };
+		B7BBF0F8210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF06A210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLParsable.generated.swift */; };
+		B7BBF0F9210B5AAF00BC74CB /* ServiceRequest_POSData+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF06B210B5AAF00BC74CB /* ServiceRequest_POSData+XMLParsable.generated.swift */; };
+		B7BBF0FA210B5AAF00BC74CB /* ServiceRequest+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF06C210B5AAF00BC74CB /* ServiceRequest+XMLParsable.generated.swift */; };
+		B7BBF0FB210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF06D210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLParsable.generated.swift */; };
+		B7BBF0FC210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF06E210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLParsable.generated.swift */; };
+		B7BBF0FD210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF06F210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLParsable.generated.swift */; };
+		B7BBF0FE210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF070210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLParsable.generated.swift */; };
+		B7BBF0FF210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF071210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLParsable.generated.swift */; };
+		B7BBF100210B5AAF00BC74CB /* CardValueType+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF072210B5AAF00BC74CB /* CardValueType+XMLParsable.generated.swift */; };
+		B7BBF101210B5AAF00BC74CB /* CardTrack+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF073210B5AAF00BC74CB /* CardTrack+XMLParsable.generated.swift */; };
+		B7BBF102210B5AAF00BC74CB /* SecureDataFlow+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF074210B5AAF00BC74CB /* SecureDataFlow+XMLParsable.generated.swift */; };
+		B7BBF103210B5AAF00BC74CB /* P2PEValues+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF075210B5AAF00BC74CB /* P2PEValues+XMLParsable.generated.swift */; };
+		B7BBF104210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF076210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLParsable.generated.swift */; };
+		B7BBF105210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF077210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLParsable.generated.swift */; };
+		B7BBF106210B5AAF00BC74CB /* E2EEValues+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF078210B5AAF00BC74CB /* E2EEValues+XMLParsable.generated.swift */; };
+		B7BBF107210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF079210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLParsable.generated.swift */; };
+		B7BBF108210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF07A210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLParsable.generated.swift */; };
+		B7BBF109210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF07B210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLParsable.generated.swift */; };
+		B7BBF10A210B5AAF00BC74CB /* CardValueICCType+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF07C210B5AAF00BC74CB /* CardValueICCType+XMLParsable.generated.swift */; };
+		B7BBF10B210B5AAF00BC74CB /* DeviceResponse+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF07D210B5AAF00BC74CB /* DeviceResponse+XMLParsable.generated.swift */; };
+		B7BBF10C210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF07E210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLParsable.generated.swift */; };
+		B7BBF10D210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF07F210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLParsable.generated.swift */; };
+		B7BBF10E210B5AAF00BC74CB /* SaleItemType+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF080210B5AAF00BC74CB /* SaleItemType+XMLParsable.generated.swift */; };
+		B7BBF10F210B5AAF00BC74CB /* MACType+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF081210B5AAF00BC74CB /* MACType+XMLParsable.generated.swift */; };
+		B7BBF110210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF082210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLParsable.generated.swift */; };
+		B7BBF111210B5AAF00BC74CB /* ICCType+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF083210B5AAF00BC74CB /* ICCType+XMLParsable.generated.swift */; };
+		B7BBF112210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF084210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLParsable.generated.swift */; };
+		B7BBF113210B5AAF00BC74CB /* ATSError+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF085210B5AAF00BC74CB /* ATSError+XMLParsable.generated.swift */; };
+		B7BBF114210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF086210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLParsable.generated.swift */; };
+		B7BBF115210B5AAF00BC74CB /* InputValueType+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF087210B5AAF00BC74CB /* InputValueType+XMLParsable.generated.swift */; };
+		B7BBF116210B5AAF00BC74CB /* EncryptedCardValueType+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF088210B5AAF00BC74CB /* EncryptedCardValueType+XMLParsable.generated.swift */; };
+		B7BBF117210B5AAF00BC74CB /* DeviceResponse_Output+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF089210B5AAF00BC74CB /* DeviceResponse_Output+XMLParsable.generated.swift */; };
+		B7BBF118210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF08A210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLParsable.generated.swift */; };
+		B7BBF119210B5AAF00BC74CB /* CardValueDRType_Features+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF08B210B5AAF00BC74CB /* CardValueDRType_Features+XMLParsable.generated.swift */; };
+		B7BBF11A210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF08C210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLParsable.generated.swift */; };
+		B7BBF11B210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF08D210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLParsable.generated.swift */; };
+		B7BBF11C210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF08E210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLParsable.generated.swift */; };
+		B7BBF11D210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF08F210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLParsable.generated.swift */; };
+		B7BBF11E210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF090210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLParsable.generated.swift */; };
+		B7BBF11F210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF091210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLParsable.generated.swift */; };
+		B7BBF120210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF092210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLParsable.generated.swift */; };
+		B7BBF121210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF093210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLParsable.generated.swift */; };
+		B7BBF122210B5AAF00BC74CB /* CardServiceRequest+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF094210B5AAF00BC74CB /* CardServiceRequest+XMLParsable.generated.swift */; };
+		B7BBF123210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF095210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLParsable.generated.swift */; };
+		B7BBF124210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF096210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLParsable.generated.swift */; };
+		B7BBF125210B5AAF00BC74CB /* CardServiceResponse+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF097210B5AAF00BC74CB /* CardServiceResponse+XMLParsable.generated.swift */; };
+		B7BBF126210B5AAF00BC74CB /* ATSErrorDetail+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF098210B5AAF00BC74CB /* ATSErrorDetail+XMLParsable.generated.swift */; };
+		B7BBF127210B5AAF00BC74CB /* DeviceRequest_Event+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF099210B5AAF00BC74CB /* DeviceRequest_Event+XMLParsable.generated.swift */; };
+		B7BBF128210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF09A210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLParsable.generated.swift */; };
+		B7BBF129210B5AAF00BC74CB /* DeviceRequest+XMLParsable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF09B210B5AAF00BC74CB /* DeviceRequest+XMLParsable.generated.swift */; };
+		B7BBF12A210B5AAF00BC74CB /* DeviceRequest_Event+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF09D210B5AAF00BC74CB /* DeviceRequest_Event+XMLSerializable.generated.swift */; };
+		B7BBF12B210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF09E210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLSerializable.generated.swift */; };
+		B7BBF12C210B5AAF00BC74CB /* ATSError+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF09F210B5AAF00BC74CB /* ATSError+XMLSerializable.generated.swift */; };
+		B7BBF12D210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A0210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLSerializable.generated.swift */; };
+		B7BBF12E210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A1210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLSerializable.generated.swift */; };
+		B7BBF12F210B5AAF00BC74CB /* CardServiceRequest+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A2210B5AAF00BC74CB /* CardServiceRequest+XMLSerializable.generated.swift */; };
+		B7BBF130210B5AAF00BC74CB /* ATSErrorDetail+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A3210B5AAF00BC74CB /* ATSErrorDetail+XMLSerializable.generated.swift */; };
+		B7BBF131210B5AAF00BC74CB /* CardValueDRType+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A4210B5AAF00BC74CB /* CardValueDRType+XMLSerializable.generated.swift */; };
+		B7BBF132210B5AAF00BC74CB /* TotalAmountType+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A5210B5AAF00BC74CB /* TotalAmountType+XMLSerializable.generated.swift */; };
+		B7BBF133210B5AAF00BC74CB /* CardValueICCType+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A6210B5AAF00BC74CB /* CardValueICCType+XMLSerializable.generated.swift */; };
+		B7BBF134210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A7210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLSerializable.generated.swift */; };
+		B7BBF135210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A8210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLSerializable.generated.swift */; };
+		B7BBF136210B5AAF00BC74CB /* E2EEValues+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0A9210B5AAF00BC74CB /* E2EEValues+XMLSerializable.generated.swift */; };
+		B7BBF137210B5AAF00BC74CB /* DeviceRequest_Input+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0AA210B5AAF00BC74CB /* DeviceRequest_Input+XMLSerializable.generated.swift */; };
+		B7BBF138210B5AAF00BC74CB /* DeviceRequest_Output+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0AB210B5AAF00BC74CB /* DeviceRequest_Output+XMLSerializable.generated.swift */; };
+		B7BBF139210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0AC210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLSerializable.generated.swift */; };
+		B7BBF13A210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0AD210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLSerializable.generated.swift */; };
+		B7BBF13B210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0AE210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLSerializable.generated.swift */; };
+		B7BBF13C210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0AF210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLSerializable.generated.swift */; };
+		B7BBF13D210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B0210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLSerializable.generated.swift */; };
+		B7BBF13E210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B1210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLSerializable.generated.swift */; };
+		B7BBF13F210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B2210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLSerializable.generated.swift */; };
+		B7BBF140210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B3210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLSerializable.generated.swift */; };
+		B7BBF141210B5AAF00BC74CB /* ServiceResponse+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B4210B5AAF00BC74CB /* ServiceResponse+XMLSerializable.generated.swift */; };
+		B7BBF142210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B5210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLSerializable.generated.swift */; };
+		B7BBF143210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B6210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLSerializable.generated.swift */; };
+		B7BBF144210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B7210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLSerializable.generated.swift */; };
+		B7BBF145210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B8210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLSerializable.generated.swift */; };
+		B7BBF146210B5AAF00BC74CB /* DeviceResponse+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0B9210B5AAF00BC74CB /* DeviceResponse+XMLSerializable.generated.swift */; };
+		B7BBF147210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0BA210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLSerializable.generated.swift */; };
+		B7BBF148210B5AAF00BC74CB /* MACType+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0BB210B5AAF00BC74CB /* MACType+XMLSerializable.generated.swift */; };
+		B7BBF149210B5AAF00BC74CB /* CardTrack+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0BC210B5AAF00BC74CB /* CardTrack+XMLSerializable.generated.swift */; };
+		B7BBF14A210B5AAF00BC74CB /* SaleItemType+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0BD210B5AAF00BC74CB /* SaleItemType+XMLSerializable.generated.swift */; };
+		B7BBF14B210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0BE210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLSerializable.generated.swift */; };
+		B7BBF14C210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0BF210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLSerializable.generated.swift */; };
+		B7BBF14D210B5AAF00BC74CB /* ICCType+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C0210B5AAF00BC74CB /* ICCType+XMLSerializable.generated.swift */; };
+		B7BBF14E210B5AAF00BC74CB /* ServiceResponse_Submission+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C1210B5AAF00BC74CB /* ServiceResponse_Submission+XMLSerializable.generated.swift */; };
+		B7BBF14F210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C2210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLSerializable.generated.swift */; };
+		B7BBF150210B5AAF00BC74CB /* ServiceRequest+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C3210B5AAF00BC74CB /* ServiceRequest+XMLSerializable.generated.swift */; };
+		B7BBF151210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C4210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLSerializable.generated.swift */; };
+		B7BBF152210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C5210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLSerializable.generated.swift */; };
+		B7BBF153210B5AAF00BC74CB /* P2PEValues+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C6210B5AAF00BC74CB /* P2PEValues+XMLSerializable.generated.swift */; };
+		B7BBF154210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C7210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLSerializable.generated.swift */; };
+		B7BBF155210B5AAF00BC74CB /* CardServiceResponse+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C8210B5AAF00BC74CB /* CardServiceResponse+XMLSerializable.generated.swift */; };
+		B7BBF156210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0C9210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLSerializable.generated.swift */; };
+		B7BBF157210B5AAF00BC74CB /* CardValueDRType_Features+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0CA210B5AAF00BC74CB /* CardValueDRType_Features+XMLSerializable.generated.swift */; };
+		B7BBF158210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0CB210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLSerializable.generated.swift */; };
+		B7BBF159210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0CC210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLSerializable.generated.swift */; };
+		B7BBF15A210B5AAF00BC74CB /* DeviceResponse_Output+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0CD210B5AAF00BC74CB /* DeviceResponse_Output+XMLSerializable.generated.swift */; };
+		B7BBF15B210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0CE210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLSerializable.generated.swift */; };
+		B7BBF15C210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0CF210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLSerializable.generated.swift */; };
+		B7BBF15D210B5AAF00BC74CB /* DeviceRequest+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D0210B5AAF00BC74CB /* DeviceRequest+XMLSerializable.generated.swift */; };
+		B7BBF15E210B5AAF00BC74CB /* DeviceResponse_Input+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D1210B5AAF00BC74CB /* DeviceResponse_Input+XMLSerializable.generated.swift */; };
+		B7BBF15F210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D2210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLSerializable.generated.swift */; };
+		B7BBF160210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D3210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLSerializable.generated.swift */; };
+		B7BBF161210B5AAF00BC74CB /* CardValueType+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D4210B5AAF00BC74CB /* CardValueType+XMLSerializable.generated.swift */; };
+		B7BBF162210B5AAF00BC74CB /* ServiceRequest_POSData+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D5210B5AAF00BC74CB /* ServiceRequest_POSData+XMLSerializable.generated.swift */; };
+		B7BBF163210B5AAF00BC74CB /* InputValueType+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D6210B5AAF00BC74CB /* InputValueType+XMLSerializable.generated.swift */; };
+		B7BBF164210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D7210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLSerializable.generated.swift */; };
+		B7BBF165210B5AAF00BC74CB /* ATSResponse+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D8210B5AAF00BC74CB /* ATSResponse+XMLSerializable.generated.swift */; };
+		B7BBF166210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0D9210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLSerializable.generated.swift */; };
+		B7BBF167210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0DA210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLSerializable.generated.swift */; };
+		B7BBF168210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0DB210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLSerializable.generated.swift */; };
+		B7BBF169210B5AAF00BC74CB /* EncryptedCardValueType+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0DC210B5AAF00BC74CB /* EncryptedCardValueType+XMLSerializable.generated.swift */; };
+		B7BBF16A210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0DD210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLSerializable.generated.swift */; };
+		B7BBF16B210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0DE210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLSerializable.generated.swift */; };
+		B7BBF16C210B5AAF00BC74CB /* ServiceResponse_Versions+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0DF210B5AAF00BC74CB /* ServiceResponse_Versions+XMLSerializable.generated.swift */; };
+		B7BBF16D210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0E0210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLSerializable.generated.swift */; };
+		B7BBF16E210B5AAF00BC74CB /* SecureDataFlow+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0E1210B5AAF00BC74CB /* SecureDataFlow+XMLSerializable.generated.swift */; };
+		B7BBF16F210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLSerializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBF0E2210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLSerializable.generated.swift */; };
+		B7F2A126210A5CBA00FAE75C /* ATS_Client_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A11C210A5CB900FAE75C /* ATS_Client_SDK.framework */; };
+		B7F2A12D210A5CBA00FAE75C /* ATS_Client_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F2A11F210A5CB900FAE75C /* ATS_Client_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7F2A149210A5D0300FAE75C /* generate.sh in Resources */ = {isa = PBXBuildFile; fileRef = B7F2A148210A5D0300FAE75C /* generate.sh */; };
+		B7F2A22A210A5D1000FAE75C /* ATSClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A226210A5D0F00FAE75C /* ATSClientDelegate.swift */; };
+		B7F2A22B210A5D1000FAE75C /* TelegramCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A229210A5D1000FAE75C /* TelegramCoding.swift */; };
+		B7F2A22D210A5D1000FAE75C /* ATSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A228210A5D1000FAE75C /* ATSClient.swift */; };
+		B7F2A230210A5D1A00FAE75C /* TelegramCodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A22E210A5D1900FAE75C /* TelegramCodingTests.swift */; };
+		B7F2A231210A5D1A00FAE75C /* ATSClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A22F210A5D1900FAE75C /* ATSClientTests.swift */; };
+		B7F2A253210A5DFF00FAE75C /* XMLElementParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A221210A5D0F00FAE75C /* XMLElementParser.swift */; };
+		B7F2A254210A5DFF00FAE75C /* XMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A222210A5D0F00FAE75C /* XMLElement.swift */; };
+		B7F2A255210A5DFF00FAE75C /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A223210A5D0F00FAE75C /* XMLEncoder.swift */; };
+		B7F2A256210A5DFF00FAE75C /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A224210A5D0F00FAE75C /* XMLDecoder.swift */; };
+		B7F2A257210A5E0300FAE75C /* DeviceResponse+success.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A21D210A5D0F00FAE75C /* DeviceResponse+success.swift */; };
+		B7F2A258210A5E1200FAE75C /* AgentOnlineType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E0210A5D0F00FAE75C /* AgentOnlineType.swift */; };
+		B7F2A259210A5E1200FAE75C /* AlignmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E1210A5D0F00FAE75C /* AlignmentType.swift */; };
+		B7F2A25A210A5E1200FAE75C /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E2210A5D0F00FAE75C /* Amount.swift */; };
+		B7F2A25B210A5E1200FAE75C /* ATSErrorDetailType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E3210A5D0F00FAE75C /* ATSErrorDetailType.swift */; };
+		B7F2A25C210A5E1200FAE75C /* ATSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E4210A5D0F00FAE75C /* ATSError.swift */; };
+		B7F2A25D210A5E1200FAE75C /* ATSResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E5210A5D0F00FAE75C /* ATSResponseType.swift */; };
+		B7F2A25E210A5E1200FAE75C /* AuthorisationMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E6210A5D0F00FAE75C /* AuthorisationMethodType.swift */; };
+		B7F2A25F210A5E1200FAE75C /* CardCircuitStateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E7210A5D0F00FAE75C /* CardCircuitStateType.swift */; };
+		B7F2A260210A5E1200FAE75C /* CardFeatureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E8210A5D0F00FAE75C /* CardFeatureType.swift */; };
+		B7F2A261210A5E1200FAE75C /* CardReadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1E9210A5D0F00FAE75C /* CardReadType.swift */; };
+		B7F2A262210A5E1200FAE75C /* CardRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1EA210A5D0F00FAE75C /* CardRequestType.swift */; };
+		B7F2A263210A5E1200FAE75C /* CardServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1EB210A5D0F00FAE75C /* CardServiceRequest.swift */; };
+		B7F2A264210A5E1200FAE75C /* CardServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1EC210A5D0F00FAE75C /* CardServiceResponse.swift */; };
+		B7F2A265210A5E1200FAE75C /* CardTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1ED210A5D0F00FAE75C /* CardTrack.swift */; };
+		B7F2A266210A5E1200FAE75C /* CardValueDRType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1EE210A5D0F00FAE75C /* CardValueDRType.swift */; };
+		B7F2A267210A5E1200FAE75C /* CardValueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1EF210A5D0F00FAE75C /* CardValueType.swift */; };
+		B7F2A268210A5E1200FAE75C /* CardValueICCType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F0210A5D0F00FAE75C /* CardValueICCType.swift */; };
+		B7F2A269210A5E1200FAE75C /* CardVerificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F1210A5D0F00FAE75C /* CardVerificationType.swift */; };
+		B7F2A26A210A5E1200FAE75C /* CharStyleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F2210A5D0F00FAE75C /* CharStyleType.swift */; };
+		B7F2A26B210A5E1200FAE75C /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F3210A5D0F00FAE75C /* ColorType.swift */; };
+		B7F2A26C210A5E1200FAE75C /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F4210A5D0F00FAE75C /* CommandType.swift */; };
+		B7F2A26D210A5E1200FAE75C /* CountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F5210A5D0F00FAE75C /* CountryCode.swift */; };
+		B7F2A26E210A5E1200FAE75C /* CurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F6210A5D0F00FAE75C /* CurrencyCode.swift */; };
+		B7F2A26F210A5E1200FAE75C /* DataRequiredType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F7210A5D0F00FAE75C /* DataRequiredType.swift */; };
+		B7F2A270210A5E1200FAE75C /* DeviceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F8210A5D0F00FAE75C /* DeviceRequest.swift */; };
+		B7F2A271210A5E1200FAE75C /* DeviceRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1F9210A5D0F00FAE75C /* DeviceRequestType.swift */; };
+		B7F2A272210A5E1200FAE75C /* DeviceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1FA210A5D0F00FAE75C /* DeviceResponse.swift */; };
+		B7F2A273210A5E1200FAE75C /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1FB210A5D0F00FAE75C /* DeviceType.swift */; };
+		B7F2A274210A5E1200FAE75C /* E2EEValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1FC210A5D0F00FAE75C /* E2EEValues.swift */; };
+		B7F2A275210A5E1200FAE75C /* EncryptedCardValueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1FD210A5D0F00FAE75C /* EncryptedCardValueType.swift */; };
+		B7F2A276210A5E1200FAE75C /* EventTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1FE210A5D0F00FAE75C /* EventTypes.swift */; };
+		B7F2A277210A5E1200FAE75C /* HeightType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1FF210A5D0F00FAE75C /* HeightType.swift */; };
+		B7F2A278210A5E1200FAE75C /* ICCType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A200210A5D0F00FAE75C /* ICCType.swift */; };
+		B7F2A279210A5E1200FAE75C /* InputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A201210A5D0F00FAE75C /* InputType.swift */; };
+		B7F2A27A210A5E1200FAE75C /* InputValueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A202210A5D0F00FAE75C /* InputValueType.swift */; };
+		B7F2A27B210A5E1200FAE75C /* LanguageCodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A203210A5D0F00FAE75C /* LanguageCodeType.swift */; };
+		B7F2A27C210A5E1200FAE75C /* MACType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A204210A5D0F00FAE75C /* MACType.swift */; };
+		B7F2A27D210A5E1200FAE75C /* OAICCNoTrack2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A205210A5D0F00FAE75C /* OAICCNoTrack2.swift */; };
+		B7F2A27E210A5E1200FAE75C /* OARefundOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A206210A5D0F00FAE75C /* OARefundOnline.swift */; };
+		B7F2A27F210A5E1200FAE75C /* OAReversalMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A207210A5D0F00FAE75C /* OAReversalMode.swift */; };
+		B7F2A280210A5E1200FAE75C /* OAReverseOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A208210A5D0F00FAE75C /* OAReverseOnline.swift */; };
+		B7F2A281210A5E1200FAE75C /* P2PEValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A209210A5D0F00FAE75C /* P2PEValues.swift */; };
+		B7F2A282210A5E1200FAE75C /* RequestResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A20A210A5D0F00FAE75C /* RequestResultType.swift */; };
+		B7F2A283210A5E1200FAE75C /* SaleItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A20B210A5D0F00FAE75C /* SaleItemType.swift */; };
+		B7F2A284210A5E1200FAE75C /* SecureDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A20C210A5D0F00FAE75C /* SecureDataFlow.swift */; };
+		B7F2A285210A5E1200FAE75C /* SeparatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A20D210A5D0F00FAE75C /* SeparatorType.swift */; };
+		B7F2A286210A5E1200FAE75C /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A20E210A5D0F00FAE75C /* ServiceRequest.swift */; };
+		B7F2A287210A5E1200FAE75C /* ServiceRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A20F210A5D0F00FAE75C /* ServiceRequestType.swift */; };
+		B7F2A288210A5E1200FAE75C /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A210210A5D0F00FAE75C /* ServiceResponse.swift */; };
+		B7F2A289210A5E1200FAE75C /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A211210A5D0F00FAE75C /* Text.swift */; };
+		B7F2A28A210A5E1200FAE75C /* TotalAmountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A212210A5D0F00FAE75C /* TotalAmountType.swift */; };
+		B7F2A28B210A5E1200FAE75C /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A213210A5D0F00FAE75C /* TransactionType.swift */; };
+		B7F2A28C210A5E1200FAE75C /* UnitOfMeasureCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A214210A5D0F00FAE75C /* UnitOfMeasureCode.swift */; };
+		B7F2A28D210A5E1200FAE75C /* WidthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A215210A5D0F00FAE75C /* WidthType.swift */; };
+		B7F2A28E210A5E1800FAE75C /* AdditionalResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1DF210A5D0F00FAE75C /* AdditionalResponseType.swift */; };
+		B7F2A28F210A5E1C00FAE75C /* ATSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1DA210A5D0F00FAE75C /* ATSMessage.swift */; };
+		B7F2A290210A5E1C00FAE75C /* XMLRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1DB210A5D0F00FAE75C /* XMLRoot.swift */; };
+		B7F2A291210A5E1C00FAE75C /* XMLSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1DC210A5D0F00FAE75C /* XMLSerializable.swift */; };
+		B7F2A292210A5E1C00FAE75C /* XMLParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A1DD210A5D0F00FAE75C /* XMLParsable.swift */; };
+		B7F2A32D210A5F0000FAE75C /* ATS_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A32C210A5F0000FAE75C /* ATS_Common.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7F2A127210A5CBA00FAE75C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7F2A113210A5CB900FAE75C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7F2A11B210A5CB900FAE75C;
+			remoteInfo = "ATS-Client-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B70F11F1210B4BA900DBB05F /* AutoMockable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoMockable.stencil; sourceTree = "<group>"; };
+		B70F11F5210B4C7300DBB05F /* MockATSClientDelegate.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockATSClientDelegate.generated.swift; sourceTree = "<group>"; };
+		B70F1314210B567D00DBB05F /* DomainObjects.sourcery.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = DomainObjects.sourcery.yml; sourceTree = "<group>"; };
+		B7BBF053210B56A300BC74CB /* Mocks.sourcery.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mocks.sourcery.yml; sourceTree = "<group>"; };
+		B7BBF054210B5AAF00BC74CB /* Auto_XMLRoot.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auto_XMLRoot.generated.swift; sourceTree = "<group>"; };
+		B7BBF056210B5AAF00BC74CB /* CardValueDRType+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueDRType+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF057210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Authorisation+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF058210B5AAF00BC74CB /* ServiceResponse_Submission+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Submission+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF059210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Event_EventData+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF05A210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceRequest_PINPadProgramLoad+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF05B210B5AAF00BC74CB /* ServiceResponse+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF05C210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_CardCircuitCollection_CardCircuit+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF05D210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceRequest_TotalAmount+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF05E210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_Acquirer+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF05F210B5AAF00BC74CB /* DeviceRequest_Output+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Output+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF060210B5AAF00BC74CB /* ServiceResponse_Versions+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Versions+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF061210B5AAF00BC74CB /* TotalAmountType+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TotalAmountType+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF062210B5AAF00BC74CB /* DeviceResponse_Input+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_Input+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF063210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Input_Command+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF064210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Reconciliation+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF065210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Loyalty_LoyaltyAmount+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF066210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_OriginalHeader+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF067210B5AAF00BC74CB /* ATSResponse+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ATSResponse+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF068210B5AAF00BC74CB /* DeviceRequest_Input+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Input+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF069210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Tender_Authorisation+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF06A210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Terminal+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF06B210B5AAF00BC74CB /* ServiceRequest_POSData+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceRequest_POSData+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF06C210B5AAF00BC74CB /* ServiceRequest+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceRequest+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF06D210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Loyalty_LoyaltyCard+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF06E210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_OriginalHeader+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF06F210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_POSData+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF070210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueDRType_CADLuhn+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF071210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Output_TextLine+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF072210B5AAF00BC74CB /* CardValueType+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueType+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF073210B5AAF00BC74CB /* CardTrack+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardTrack+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF074210B5AAF00BC74CB /* SecureDataFlow+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SecureDataFlow+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF075210B5AAF00BC74CB /* P2PEValues+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "P2PEValues+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF076210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF077210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Reconciliation_TotalAmount+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF078210B5AAF00BC74CB /* E2EEValues+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "E2EEValues+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF079210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Output_Buzzer+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF07A210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Terminal+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF07B210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF07C210B5AAF00BC74CB /* CardValueICCType+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueICCType+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF07D210B5AAF00BC74CB /* DeviceResponse+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF07E210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult_TransactionLimits+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF07F210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_OriginalTransaction+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF080210B5AAF00BC74CB /* SaleItemType+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SaleItemType+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF081210B5AAF00BC74CB /* MACType+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MACType+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF082210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_Loyalty_LoyaltyCard+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF083210B5AAF00BC74CB /* ICCType+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ICCType+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF084210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF085210B5AAF00BC74CB /* ATSError+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ATSError+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF086210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult_Acquirer+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF087210B5AAF00BC74CB /* InputValueType+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InputValueType+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF088210B5AAF00BC74CB /* EncryptedCardValueType+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EncryptedCardValueType+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF089210B5AAF00BC74CB /* DeviceResponse_Output+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_Output+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF08A210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_Loyalty_MOPrule+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF08B210B5AAF00BC74CB /* CardValueDRType_Features+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueDRType_Features+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF08C210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult_AuthResponse+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF08D210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_Loyalty+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF08E210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Event_EventData_ProductsAllowed+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF08F210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult_OACentreDetails+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF090210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Versions_Devices+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF091210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Tender+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF092210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Loyalty+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF093210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Versions_Devices_Device+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF094210B5AAF00BC74CB /* CardServiceRequest+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF095210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_CardCircuitCollection+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF096210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Submission_Failed+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF097210B5AAF00BC74CB /* CardServiceResponse+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF098210B5AAF00BC74CB /* ATSErrorDetail+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ATSErrorDetail+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF099210B5AAF00BC74CB /* DeviceRequest_Event+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Event+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF09A210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Submission_Successful+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF09B210B5AAF00BC74CB /* DeviceRequest+XMLParsable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest+XMLParsable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF09D210B5AAF00BC74CB /* DeviceRequest_Event+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Event+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF09E210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Authorisation+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF09F210B5AAF00BC74CB /* ATSError+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ATSError+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A0210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceRequest_TotalAmount+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A1210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_Acquirer+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A2210B5AAF00BC74CB /* CardServiceRequest+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A3210B5AAF00BC74CB /* ATSErrorDetail+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ATSErrorDetail+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A4210B5AAF00BC74CB /* CardValueDRType+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueDRType+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A5210B5AAF00BC74CB /* TotalAmountType+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TotalAmountType+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A6210B5AAF00BC74CB /* CardValueICCType+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueICCType+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A7210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A8210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Output_TextLine+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0A9210B5AAF00BC74CB /* E2EEValues+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "E2EEValues+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0AA210B5AAF00BC74CB /* DeviceRequest_Input+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Input+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0AB210B5AAF00BC74CB /* DeviceRequest_Output+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Output+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0AC210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueDRType_CADLuhn+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0AD210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceRequest_PINPadProgramLoad+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0AE210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Reconciliation_TotalAmount+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0AF210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_POSData+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B0210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_OriginalHeader+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B1210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult_TransactionLimits+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B2210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Versions_Devices+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B3210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B4210B5AAF00BC74CB /* ServiceResponse+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B5210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_OriginalTransaction+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B6210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Loyalty+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B7210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B8210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Loyalty_LoyaltyCard+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0B9210B5AAF00BC74CB /* DeviceResponse+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0BA210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_Loyalty_MOPrule+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0BB210B5AAF00BC74CB /* MACType+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MACType+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0BC210B5AAF00BC74CB /* CardTrack+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardTrack+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0BD210B5AAF00BC74CB /* SaleItemType+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SaleItemType+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0BE210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Output_Buzzer+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0BF210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Terminal+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C0210B5AAF00BC74CB /* ICCType+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ICCType+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C1210B5AAF00BC74CB /* ServiceResponse_Submission+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Submission+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C2210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult_OACentreDetails+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C3210B5AAF00BC74CB /* ServiceRequest+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceRequest+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C4210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_CardCircuitCollection+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C5210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_Loyalty+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C6210B5AAF00BC74CB /* P2PEValues+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "P2PEValues+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C7210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Submission_Failed+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C8210B5AAF00BC74CB /* CardServiceResponse+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0C9210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult_AuthResponse+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0CA210B5AAF00BC74CB /* CardValueDRType_Features+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueDRType_Features+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0CB210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_OriginalHeader+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0CC210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_EventResult_Acquirer+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0CD210B5AAF00BC74CB /* DeviceResponse_Output+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_Output+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0CE210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Reconciliation+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0CF210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Tender+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D0210B5AAF00BC74CB /* DeviceRequest+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D1210B5AAF00BC74CB /* DeviceResponse_Input+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceResponse_Input+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D2210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Event_EventData_ProductsAllowed+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D3210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_Loyalty_LoyaltyCard+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D4210B5AAF00BC74CB /* CardValueType+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardValueType+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D5210B5AAF00BC74CB /* ServiceRequest_POSData+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceRequest_POSData+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D6210B5AAF00BC74CB /* InputValueType+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InputValueType+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D7210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Input_Command+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D8210B5AAF00BC74CB /* ATSResponse+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ATSResponse+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0D9210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Versions_Devices_Device+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0DA210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeviceRequest_Event_EventData+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0DB210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Terminal+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0DC210B5AAF00BC74CB /* EncryptedCardValueType+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EncryptedCardValueType+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0DD210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceRequest_CardCircuitCollection_CardCircuit+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0DE210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Loyalty_LoyaltyAmount+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0DF210B5AAF00BC74CB /* ServiceResponse_Versions+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Versions+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0E0210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceResponse_Submission_Successful+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0E1210B5AAF00BC74CB /* SecureDataFlow+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SecureDataFlow+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7BBF0E2210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLSerializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardServiceResponse_Tender_Authorisation+XMLSerializable.generated.swift"; sourceTree = "<group>"; };
+		B7F2A11C210A5CB900FAE75C /* ATS_Client_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATS_Client_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F2A11F210A5CB900FAE75C /* ATS_Client_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATS_Client_SDK.h; sourceTree = "<group>"; };
+		B7F2A120210A5CB900FAE75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F2A125210A5CBA00FAE75C /* ATS-Client-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ATS-Client-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F2A12C210A5CBA00FAE75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F2A148210A5D0300FAE75C /* generate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generate.sh; sourceTree = "<group>"; };
+		B7F2A1DA210A5D0F00FAE75C /* ATSMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSMessage.swift; sourceTree = "<group>"; };
+		B7F2A1DB210A5D0F00FAE75C /* XMLRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLRoot.swift; sourceTree = "<group>"; };
+		B7F2A1DC210A5D0F00FAE75C /* XMLSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLSerializable.swift; sourceTree = "<group>"; };
+		B7F2A1DD210A5D0F00FAE75C /* XMLParsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParsable.swift; sourceTree = "<group>"; };
+		B7F2A1DF210A5D0F00FAE75C /* AdditionalResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalResponseType.swift; sourceTree = "<group>"; };
+		B7F2A1E0210A5D0F00FAE75C /* AgentOnlineType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentOnlineType.swift; sourceTree = "<group>"; };
+		B7F2A1E1210A5D0F00FAE75C /* AlignmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentType.swift; sourceTree = "<group>"; };
+		B7F2A1E2210A5D0F00FAE75C /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		B7F2A1E3210A5D0F00FAE75C /* ATSErrorDetailType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSErrorDetailType.swift; sourceTree = "<group>"; };
+		B7F2A1E4210A5D0F00FAE75C /* ATSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSError.swift; sourceTree = "<group>"; };
+		B7F2A1E5210A5D0F00FAE75C /* ATSResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSResponseType.swift; sourceTree = "<group>"; };
+		B7F2A1E6210A5D0F00FAE75C /* AuthorisationMethodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorisationMethodType.swift; sourceTree = "<group>"; };
+		B7F2A1E7210A5D0F00FAE75C /* CardCircuitStateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCircuitStateType.swift; sourceTree = "<group>"; };
+		B7F2A1E8210A5D0F00FAE75C /* CardFeatureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFeatureType.swift; sourceTree = "<group>"; };
+		B7F2A1E9210A5D0F00FAE75C /* CardReadType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReadType.swift; sourceTree = "<group>"; };
+		B7F2A1EA210A5D0F00FAE75C /* CardRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRequestType.swift; sourceTree = "<group>"; };
+		B7F2A1EB210A5D0F00FAE75C /* CardServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardServiceRequest.swift; sourceTree = "<group>"; };
+		B7F2A1EC210A5D0F00FAE75C /* CardServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardServiceResponse.swift; sourceTree = "<group>"; };
+		B7F2A1ED210A5D0F00FAE75C /* CardTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTrack.swift; sourceTree = "<group>"; };
+		B7F2A1EE210A5D0F00FAE75C /* CardValueDRType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValueDRType.swift; sourceTree = "<group>"; };
+		B7F2A1EF210A5D0F00FAE75C /* CardValueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValueType.swift; sourceTree = "<group>"; };
+		B7F2A1F0210A5D0F00FAE75C /* CardValueICCType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValueICCType.swift; sourceTree = "<group>"; };
+		B7F2A1F1210A5D0F00FAE75C /* CardVerificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVerificationType.swift; sourceTree = "<group>"; };
+		B7F2A1F2210A5D0F00FAE75C /* CharStyleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharStyleType.swift; sourceTree = "<group>"; };
+		B7F2A1F3210A5D0F00FAE75C /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		B7F2A1F4210A5D0F00FAE75C /* CommandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandType.swift; sourceTree = "<group>"; };
+		B7F2A1F5210A5D0F00FAE75C /* CountryCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCode.swift; sourceTree = "<group>"; };
+		B7F2A1F6210A5D0F00FAE75C /* CurrencyCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCode.swift; sourceTree = "<group>"; };
+		B7F2A1F7210A5D0F00FAE75C /* DataRequiredType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequiredType.swift; sourceTree = "<group>"; };
+		B7F2A1F8210A5D0F00FAE75C /* DeviceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRequest.swift; sourceTree = "<group>"; };
+		B7F2A1F9210A5D0F00FAE75C /* DeviceRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRequestType.swift; sourceTree = "<group>"; };
+		B7F2A1FA210A5D0F00FAE75C /* DeviceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceResponse.swift; sourceTree = "<group>"; };
+		B7F2A1FB210A5D0F00FAE75C /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		B7F2A1FC210A5D0F00FAE75C /* E2EEValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E2EEValues.swift; sourceTree = "<group>"; };
+		B7F2A1FD210A5D0F00FAE75C /* EncryptedCardValueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptedCardValueType.swift; sourceTree = "<group>"; };
+		B7F2A1FE210A5D0F00FAE75C /* EventTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypes.swift; sourceTree = "<group>"; };
+		B7F2A1FF210A5D0F00FAE75C /* HeightType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightType.swift; sourceTree = "<group>"; };
+		B7F2A200210A5D0F00FAE75C /* ICCType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICCType.swift; sourceTree = "<group>"; };
+		B7F2A201210A5D0F00FAE75C /* InputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputType.swift; sourceTree = "<group>"; };
+		B7F2A202210A5D0F00FAE75C /* InputValueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValueType.swift; sourceTree = "<group>"; };
+		B7F2A203210A5D0F00FAE75C /* LanguageCodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCodeType.swift; sourceTree = "<group>"; };
+		B7F2A204210A5D0F00FAE75C /* MACType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MACType.swift; sourceTree = "<group>"; };
+		B7F2A205210A5D0F00FAE75C /* OAICCNoTrack2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAICCNoTrack2.swift; sourceTree = "<group>"; };
+		B7F2A206210A5D0F00FAE75C /* OARefundOnline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OARefundOnline.swift; sourceTree = "<group>"; };
+		B7F2A207210A5D0F00FAE75C /* OAReversalMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAReversalMode.swift; sourceTree = "<group>"; };
+		B7F2A208210A5D0F00FAE75C /* OAReverseOnline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAReverseOnline.swift; sourceTree = "<group>"; };
+		B7F2A209210A5D0F00FAE75C /* P2PEValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PEValues.swift; sourceTree = "<group>"; };
+		B7F2A20A210A5D0F00FAE75C /* RequestResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResultType.swift; sourceTree = "<group>"; };
+		B7F2A20B210A5D0F00FAE75C /* SaleItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleItemType.swift; sourceTree = "<group>"; };
+		B7F2A20C210A5D0F00FAE75C /* SecureDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDataFlow.swift; sourceTree = "<group>"; };
+		B7F2A20D210A5D0F00FAE75C /* SeparatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorType.swift; sourceTree = "<group>"; };
+		B7F2A20E210A5D0F00FAE75C /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		B7F2A20F210A5D0F00FAE75C /* ServiceRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestType.swift; sourceTree = "<group>"; };
+		B7F2A210210A5D0F00FAE75C /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		B7F2A211210A5D0F00FAE75C /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		B7F2A212210A5D0F00FAE75C /* TotalAmountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalAmountType.swift; sourceTree = "<group>"; };
+		B7F2A213210A5D0F00FAE75C /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
+		B7F2A214210A5D0F00FAE75C /* UnitOfMeasureCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitOfMeasureCode.swift; sourceTree = "<group>"; };
+		B7F2A215210A5D0F00FAE75C /* WidthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidthType.swift; sourceTree = "<group>"; };
+		B7F2A217210A5D0F00FAE75C /* InitMethods.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = InitMethods.stencil; sourceTree = "<group>"; };
+		B7F2A218210A5D0F00FAE75C /* Auto_XMLParsable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Auto_XMLParsable.stencil; sourceTree = "<group>"; };
+		B7F2A219210A5D0F00FAE75C /* Auto_XMLRoot.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Auto_XMLRoot.stencil; sourceTree = "<group>"; };
+		B7F2A21A210A5D0F00FAE75C /* Auto_XMLSerializable.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Auto_XMLSerializable.stencil; sourceTree = "<group>"; };
+		B7F2A21B210A5D0F00FAE75C /* ATSMessageParsing.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ATSMessageParsing.stencil; sourceTree = "<group>"; };
+		B7F2A21D210A5D0F00FAE75C /* DeviceResponse+success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceResponse+success.swift"; sourceTree = "<group>"; };
+		B7F2A221210A5D0F00FAE75C /* XMLElementParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLElementParser.swift; sourceTree = "<group>"; };
+		B7F2A222210A5D0F00FAE75C /* XMLElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLElement.swift; sourceTree = "<group>"; };
+		B7F2A223210A5D0F00FAE75C /* XMLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLEncoder.swift; sourceTree = "<group>"; };
+		B7F2A224210A5D0F00FAE75C /* XMLDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLDecoder.swift; sourceTree = "<group>"; };
+		B7F2A226210A5D0F00FAE75C /* ATSClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSClientDelegate.swift; sourceTree = "<group>"; };
+		B7F2A228210A5D1000FAE75C /* ATSClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSClient.swift; sourceTree = "<group>"; };
+		B7F2A229210A5D1000FAE75C /* TelegramCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramCoding.swift; sourceTree = "<group>"; };
+		B7F2A22E210A5D1900FAE75C /* TelegramCodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramCodingTests.swift; sourceTree = "<group>"; };
+		B7F2A22F210A5D1900FAE75C /* ATSClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSClientTests.swift; sourceTree = "<group>"; };
+		B7F2A32C210A5F0000FAE75C /* ATS_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ATS_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7F2A118210A5CB900FAE75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A32D210A5F0000FAE75C /* ATS_Common.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F2A122210A5CBA00FAE75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A126210A5CBA00FAE75C /* ATS_Client_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B70F11EE210B49CF00DBB05F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B70F11F0210B49E100DBB05F /* Generated */,
+				B70F11EF210B49DA00DBB05F /* Templates */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B70F11EF210B49DA00DBB05F /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				B70F11F1210B4BA900DBB05F /* AutoMockable.stencil */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		B70F11F0210B49E100DBB05F /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				B70F11F5210B4C7300DBB05F /* MockATSClientDelegate.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		B7BBF055210B5AAF00BC74CB /* XMLParsable */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF056210B5AAF00BC74CB /* CardValueDRType+XMLParsable.generated.swift */,
+				B7BBF057210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLParsable.generated.swift */,
+				B7BBF058210B5AAF00BC74CB /* ServiceResponse_Submission+XMLParsable.generated.swift */,
+				B7BBF059210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLParsable.generated.swift */,
+				B7BBF05A210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLParsable.generated.swift */,
+				B7BBF05B210B5AAF00BC74CB /* ServiceResponse+XMLParsable.generated.swift */,
+				B7BBF05C210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLParsable.generated.swift */,
+				B7BBF05D210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLParsable.generated.swift */,
+				B7BBF05E210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLParsable.generated.swift */,
+				B7BBF05F210B5AAF00BC74CB /* DeviceRequest_Output+XMLParsable.generated.swift */,
+				B7BBF060210B5AAF00BC74CB /* ServiceResponse_Versions+XMLParsable.generated.swift */,
+				B7BBF061210B5AAF00BC74CB /* TotalAmountType+XMLParsable.generated.swift */,
+				B7BBF062210B5AAF00BC74CB /* DeviceResponse_Input+XMLParsable.generated.swift */,
+				B7BBF063210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLParsable.generated.swift */,
+				B7BBF064210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLParsable.generated.swift */,
+				B7BBF065210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLParsable.generated.swift */,
+				B7BBF066210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLParsable.generated.swift */,
+				B7BBF067210B5AAF00BC74CB /* ATSResponse+XMLParsable.generated.swift */,
+				B7BBF068210B5AAF00BC74CB /* DeviceRequest_Input+XMLParsable.generated.swift */,
+				B7BBF069210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLParsable.generated.swift */,
+				B7BBF06A210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLParsable.generated.swift */,
+				B7BBF06B210B5AAF00BC74CB /* ServiceRequest_POSData+XMLParsable.generated.swift */,
+				B7BBF06C210B5AAF00BC74CB /* ServiceRequest+XMLParsable.generated.swift */,
+				B7BBF06D210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLParsable.generated.swift */,
+				B7BBF06E210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLParsable.generated.swift */,
+				B7BBF06F210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLParsable.generated.swift */,
+				B7BBF070210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLParsable.generated.swift */,
+				B7BBF071210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLParsable.generated.swift */,
+				B7BBF072210B5AAF00BC74CB /* CardValueType+XMLParsable.generated.swift */,
+				B7BBF073210B5AAF00BC74CB /* CardTrack+XMLParsable.generated.swift */,
+				B7BBF074210B5AAF00BC74CB /* SecureDataFlow+XMLParsable.generated.swift */,
+				B7BBF075210B5AAF00BC74CB /* P2PEValues+XMLParsable.generated.swift */,
+				B7BBF076210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLParsable.generated.swift */,
+				B7BBF077210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLParsable.generated.swift */,
+				B7BBF078210B5AAF00BC74CB /* E2EEValues+XMLParsable.generated.swift */,
+				B7BBF079210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLParsable.generated.swift */,
+				B7BBF07A210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLParsable.generated.swift */,
+				B7BBF07B210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLParsable.generated.swift */,
+				B7BBF07C210B5AAF00BC74CB /* CardValueICCType+XMLParsable.generated.swift */,
+				B7BBF07D210B5AAF00BC74CB /* DeviceResponse+XMLParsable.generated.swift */,
+				B7BBF07E210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLParsable.generated.swift */,
+				B7BBF07F210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLParsable.generated.swift */,
+				B7BBF080210B5AAF00BC74CB /* SaleItemType+XMLParsable.generated.swift */,
+				B7BBF081210B5AAF00BC74CB /* MACType+XMLParsable.generated.swift */,
+				B7BBF082210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLParsable.generated.swift */,
+				B7BBF083210B5AAF00BC74CB /* ICCType+XMLParsable.generated.swift */,
+				B7BBF084210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLParsable.generated.swift */,
+				B7BBF085210B5AAF00BC74CB /* ATSError+XMLParsable.generated.swift */,
+				B7BBF086210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLParsable.generated.swift */,
+				B7BBF087210B5AAF00BC74CB /* InputValueType+XMLParsable.generated.swift */,
+				B7BBF088210B5AAF00BC74CB /* EncryptedCardValueType+XMLParsable.generated.swift */,
+				B7BBF089210B5AAF00BC74CB /* DeviceResponse_Output+XMLParsable.generated.swift */,
+				B7BBF08A210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLParsable.generated.swift */,
+				B7BBF08B210B5AAF00BC74CB /* CardValueDRType_Features+XMLParsable.generated.swift */,
+				B7BBF08C210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLParsable.generated.swift */,
+				B7BBF08D210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLParsable.generated.swift */,
+				B7BBF08E210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLParsable.generated.swift */,
+				B7BBF08F210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLParsable.generated.swift */,
+				B7BBF090210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLParsable.generated.swift */,
+				B7BBF091210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLParsable.generated.swift */,
+				B7BBF092210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLParsable.generated.swift */,
+				B7BBF093210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLParsable.generated.swift */,
+				B7BBF094210B5AAF00BC74CB /* CardServiceRequest+XMLParsable.generated.swift */,
+				B7BBF095210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLParsable.generated.swift */,
+				B7BBF096210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLParsable.generated.swift */,
+				B7BBF097210B5AAF00BC74CB /* CardServiceResponse+XMLParsable.generated.swift */,
+				B7BBF098210B5AAF00BC74CB /* ATSErrorDetail+XMLParsable.generated.swift */,
+				B7BBF099210B5AAF00BC74CB /* DeviceRequest_Event+XMLParsable.generated.swift */,
+				B7BBF09A210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLParsable.generated.swift */,
+				B7BBF09B210B5AAF00BC74CB /* DeviceRequest+XMLParsable.generated.swift */,
+			);
+			path = XMLParsable;
+			sourceTree = "<group>";
+		};
+		B7BBF09C210B5AAF00BC74CB /* XMLSerializable */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF09D210B5AAF00BC74CB /* DeviceRequest_Event+XMLSerializable.generated.swift */,
+				B7BBF09E210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLSerializable.generated.swift */,
+				B7BBF09F210B5AAF00BC74CB /* ATSError+XMLSerializable.generated.swift */,
+				B7BBF0A0210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLSerializable.generated.swift */,
+				B7BBF0A1210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLSerializable.generated.swift */,
+				B7BBF0A2210B5AAF00BC74CB /* CardServiceRequest+XMLSerializable.generated.swift */,
+				B7BBF0A3210B5AAF00BC74CB /* ATSErrorDetail+XMLSerializable.generated.swift */,
+				B7BBF0A4210B5AAF00BC74CB /* CardValueDRType+XMLSerializable.generated.swift */,
+				B7BBF0A5210B5AAF00BC74CB /* TotalAmountType+XMLSerializable.generated.swift */,
+				B7BBF0A6210B5AAF00BC74CB /* CardValueICCType+XMLSerializable.generated.swift */,
+				B7BBF0A7210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLSerializable.generated.swift */,
+				B7BBF0A8210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLSerializable.generated.swift */,
+				B7BBF0A9210B5AAF00BC74CB /* E2EEValues+XMLSerializable.generated.swift */,
+				B7BBF0AA210B5AAF00BC74CB /* DeviceRequest_Input+XMLSerializable.generated.swift */,
+				B7BBF0AB210B5AAF00BC74CB /* DeviceRequest_Output+XMLSerializable.generated.swift */,
+				B7BBF0AC210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLSerializable.generated.swift */,
+				B7BBF0AD210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLSerializable.generated.swift */,
+				B7BBF0AE210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLSerializable.generated.swift */,
+				B7BBF0AF210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLSerializable.generated.swift */,
+				B7BBF0B0210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLSerializable.generated.swift */,
+				B7BBF0B1210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLSerializable.generated.swift */,
+				B7BBF0B2210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLSerializable.generated.swift */,
+				B7BBF0B3210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLSerializable.generated.swift */,
+				B7BBF0B4210B5AAF00BC74CB /* ServiceResponse+XMLSerializable.generated.swift */,
+				B7BBF0B5210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLSerializable.generated.swift */,
+				B7BBF0B6210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLSerializable.generated.swift */,
+				B7BBF0B7210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLSerializable.generated.swift */,
+				B7BBF0B8210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLSerializable.generated.swift */,
+				B7BBF0B9210B5AAF00BC74CB /* DeviceResponse+XMLSerializable.generated.swift */,
+				B7BBF0BA210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLSerializable.generated.swift */,
+				B7BBF0BB210B5AAF00BC74CB /* MACType+XMLSerializable.generated.swift */,
+				B7BBF0BC210B5AAF00BC74CB /* CardTrack+XMLSerializable.generated.swift */,
+				B7BBF0BD210B5AAF00BC74CB /* SaleItemType+XMLSerializable.generated.swift */,
+				B7BBF0BE210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLSerializable.generated.swift */,
+				B7BBF0BF210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLSerializable.generated.swift */,
+				B7BBF0C0210B5AAF00BC74CB /* ICCType+XMLSerializable.generated.swift */,
+				B7BBF0C1210B5AAF00BC74CB /* ServiceResponse_Submission+XMLSerializable.generated.swift */,
+				B7BBF0C2210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLSerializable.generated.swift */,
+				B7BBF0C3210B5AAF00BC74CB /* ServiceRequest+XMLSerializable.generated.swift */,
+				B7BBF0C4210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLSerializable.generated.swift */,
+				B7BBF0C5210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLSerializable.generated.swift */,
+				B7BBF0C6210B5AAF00BC74CB /* P2PEValues+XMLSerializable.generated.swift */,
+				B7BBF0C7210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLSerializable.generated.swift */,
+				B7BBF0C8210B5AAF00BC74CB /* CardServiceResponse+XMLSerializable.generated.swift */,
+				B7BBF0C9210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLSerializable.generated.swift */,
+				B7BBF0CA210B5AAF00BC74CB /* CardValueDRType_Features+XMLSerializable.generated.swift */,
+				B7BBF0CB210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLSerializable.generated.swift */,
+				B7BBF0CC210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLSerializable.generated.swift */,
+				B7BBF0CD210B5AAF00BC74CB /* DeviceResponse_Output+XMLSerializable.generated.swift */,
+				B7BBF0CE210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLSerializable.generated.swift */,
+				B7BBF0CF210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLSerializable.generated.swift */,
+				B7BBF0D0210B5AAF00BC74CB /* DeviceRequest+XMLSerializable.generated.swift */,
+				B7BBF0D1210B5AAF00BC74CB /* DeviceResponse_Input+XMLSerializable.generated.swift */,
+				B7BBF0D2210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLSerializable.generated.swift */,
+				B7BBF0D3210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLSerializable.generated.swift */,
+				B7BBF0D4210B5AAF00BC74CB /* CardValueType+XMLSerializable.generated.swift */,
+				B7BBF0D5210B5AAF00BC74CB /* ServiceRequest_POSData+XMLSerializable.generated.swift */,
+				B7BBF0D6210B5AAF00BC74CB /* InputValueType+XMLSerializable.generated.swift */,
+				B7BBF0D7210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLSerializable.generated.swift */,
+				B7BBF0D8210B5AAF00BC74CB /* ATSResponse+XMLSerializable.generated.swift */,
+				B7BBF0D9210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLSerializable.generated.swift */,
+				B7BBF0DA210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLSerializable.generated.swift */,
+				B7BBF0DB210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLSerializable.generated.swift */,
+				B7BBF0DC210B5AAF00BC74CB /* EncryptedCardValueType+XMLSerializable.generated.swift */,
+				B7BBF0DD210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLSerializable.generated.swift */,
+				B7BBF0DE210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLSerializable.generated.swift */,
+				B7BBF0DF210B5AAF00BC74CB /* ServiceResponse_Versions+XMLSerializable.generated.swift */,
+				B7BBF0E0210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLSerializable.generated.swift */,
+				B7BBF0E1210B5AAF00BC74CB /* SecureDataFlow+XMLSerializable.generated.swift */,
+				B7BBF0E2210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLSerializable.generated.swift */,
+			);
+			path = XMLSerializable;
+			sourceTree = "<group>";
+		};
+		B7F2A112210A5CB900FAE75C = {
+			isa = PBXGroup;
+			children = (
+				B7BBF053210B56A300BC74CB /* Mocks.sourcery.yml */,
+				B70F1314210B567D00DBB05F /* DomainObjects.sourcery.yml */,
+				B7F2A148210A5D0300FAE75C /* generate.sh */,
+				B7F2A11E210A5CB900FAE75C /* ATS-Client-SDK */,
+				B7F2A129210A5CBA00FAE75C /* ATS-Client-SDKTests */,
+				B7F2A11D210A5CB900FAE75C /* Products */,
+				B7F2A32B210A5F0000FAE75C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7F2A11D210A5CB900FAE75C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A11C210A5CB900FAE75C /* ATS_Client_SDK.framework */,
+				B7F2A125210A5CBA00FAE75C /* ATS-Client-SDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7F2A11E210A5CB900FAE75C /* ATS-Client-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A228210A5D1000FAE75C /* ATSClient.swift */,
+				B7F2A226210A5D0F00FAE75C /* ATSClientDelegate.swift */,
+				B7F2A229210A5D1000FAE75C /* TelegramCoding.swift */,
+				B7F2A220210A5D0F00FAE75C /* Domain */,
+				B7F2A225210A5D0F00FAE75C /* XML */,
+				B7F2A11F210A5CB900FAE75C /* ATS_Client_SDK.h */,
+				B7F2A120210A5CB900FAE75C /* Info.plist */,
+			);
+			path = "ATS-Client-SDK";
+			sourceTree = "<group>";
+		};
+		B7F2A129210A5CBA00FAE75C /* ATS-Client-SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				B70F11EE210B49CF00DBB05F /* Mocks */,
+				B7F2A22E210A5D1900FAE75C /* TelegramCodingTests.swift */,
+				B7F2A22F210A5D1900FAE75C /* ATSClientTests.swift */,
+				B7F2A12C210A5CBA00FAE75C /* Info.plist */,
+			);
+			path = "ATS-Client-SDKTests";
+			sourceTree = "<group>";
+		};
+		B7F2A1D9210A5D0F00FAE75C /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				B7BBF054210B5AAF00BC74CB /* Auto_XMLRoot.generated.swift */,
+				B7BBF055210B5AAF00BC74CB /* XMLParsable */,
+				B7BBF09C210B5AAF00BC74CB /* XMLSerializable */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		B7F2A1DE210A5D0F00FAE75C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A1DA210A5D0F00FAE75C /* ATSMessage.swift */,
+				B7F2A1DB210A5D0F00FAE75C /* XMLRoot.swift */,
+				B7F2A1DC210A5D0F00FAE75C /* XMLSerializable.swift */,
+				B7F2A1DD210A5D0F00FAE75C /* XMLParsable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B7F2A216210A5D0F00FAE75C /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A1DE210A5D0F00FAE75C /* Common */,
+				B7F2A1DF210A5D0F00FAE75C /* AdditionalResponseType.swift */,
+				B7F2A1E0210A5D0F00FAE75C /* AgentOnlineType.swift */,
+				B7F2A1E1210A5D0F00FAE75C /* AlignmentType.swift */,
+				B7F2A1E2210A5D0F00FAE75C /* Amount.swift */,
+				B7F2A1E3210A5D0F00FAE75C /* ATSErrorDetailType.swift */,
+				B7F2A1E4210A5D0F00FAE75C /* ATSError.swift */,
+				B7F2A1E5210A5D0F00FAE75C /* ATSResponseType.swift */,
+				B7F2A1E6210A5D0F00FAE75C /* AuthorisationMethodType.swift */,
+				B7F2A1E7210A5D0F00FAE75C /* CardCircuitStateType.swift */,
+				B7F2A1E8210A5D0F00FAE75C /* CardFeatureType.swift */,
+				B7F2A1E9210A5D0F00FAE75C /* CardReadType.swift */,
+				B7F2A1EA210A5D0F00FAE75C /* CardRequestType.swift */,
+				B7F2A1EB210A5D0F00FAE75C /* CardServiceRequest.swift */,
+				B7F2A1EC210A5D0F00FAE75C /* CardServiceResponse.swift */,
+				B7F2A1ED210A5D0F00FAE75C /* CardTrack.swift */,
+				B7F2A1EE210A5D0F00FAE75C /* CardValueDRType.swift */,
+				B7F2A1EF210A5D0F00FAE75C /* CardValueType.swift */,
+				B7F2A1F0210A5D0F00FAE75C /* CardValueICCType.swift */,
+				B7F2A1F1210A5D0F00FAE75C /* CardVerificationType.swift */,
+				B7F2A1F2210A5D0F00FAE75C /* CharStyleType.swift */,
+				B7F2A1F3210A5D0F00FAE75C /* ColorType.swift */,
+				B7F2A1F4210A5D0F00FAE75C /* CommandType.swift */,
+				B7F2A1F5210A5D0F00FAE75C /* CountryCode.swift */,
+				B7F2A1F6210A5D0F00FAE75C /* CurrencyCode.swift */,
+				B7F2A1F7210A5D0F00FAE75C /* DataRequiredType.swift */,
+				B7F2A1F8210A5D0F00FAE75C /* DeviceRequest.swift */,
+				B7F2A1F9210A5D0F00FAE75C /* DeviceRequestType.swift */,
+				B7F2A1FA210A5D0F00FAE75C /* DeviceResponse.swift */,
+				B7F2A1FB210A5D0F00FAE75C /* DeviceType.swift */,
+				B7F2A1FC210A5D0F00FAE75C /* E2EEValues.swift */,
+				B7F2A1FD210A5D0F00FAE75C /* EncryptedCardValueType.swift */,
+				B7F2A1FE210A5D0F00FAE75C /* EventTypes.swift */,
+				B7F2A1FF210A5D0F00FAE75C /* HeightType.swift */,
+				B7F2A200210A5D0F00FAE75C /* ICCType.swift */,
+				B7F2A201210A5D0F00FAE75C /* InputType.swift */,
+				B7F2A202210A5D0F00FAE75C /* InputValueType.swift */,
+				B7F2A203210A5D0F00FAE75C /* LanguageCodeType.swift */,
+				B7F2A204210A5D0F00FAE75C /* MACType.swift */,
+				B7F2A205210A5D0F00FAE75C /* OAICCNoTrack2.swift */,
+				B7F2A206210A5D0F00FAE75C /* OARefundOnline.swift */,
+				B7F2A207210A5D0F00FAE75C /* OAReversalMode.swift */,
+				B7F2A208210A5D0F00FAE75C /* OAReverseOnline.swift */,
+				B7F2A209210A5D0F00FAE75C /* P2PEValues.swift */,
+				B7F2A20A210A5D0F00FAE75C /* RequestResultType.swift */,
+				B7F2A20B210A5D0F00FAE75C /* SaleItemType.swift */,
+				B7F2A20C210A5D0F00FAE75C /* SecureDataFlow.swift */,
+				B7F2A20D210A5D0F00FAE75C /* SeparatorType.swift */,
+				B7F2A20E210A5D0F00FAE75C /* ServiceRequest.swift */,
+				B7F2A20F210A5D0F00FAE75C /* ServiceRequestType.swift */,
+				B7F2A210210A5D0F00FAE75C /* ServiceResponse.swift */,
+				B7F2A211210A5D0F00FAE75C /* Text.swift */,
+				B7F2A212210A5D0F00FAE75C /* TotalAmountType.swift */,
+				B7F2A213210A5D0F00FAE75C /* TransactionType.swift */,
+				B7F2A214210A5D0F00FAE75C /* UnitOfMeasureCode.swift */,
+				B7F2A215210A5D0F00FAE75C /* WidthType.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		B7F2A21C210A5D0F00FAE75C /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A217210A5D0F00FAE75C /* InitMethods.stencil */,
+				B7F2A218210A5D0F00FAE75C /* Auto_XMLParsable.stencil */,
+				B7F2A219210A5D0F00FAE75C /* Auto_XMLRoot.stencil */,
+				B7F2A21A210A5D0F00FAE75C /* Auto_XMLSerializable.stencil */,
+				B7F2A21B210A5D0F00FAE75C /* ATSMessageParsing.stencil */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		B7F2A21E210A5D0F00FAE75C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A21D210A5D0F00FAE75C /* DeviceResponse+success.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7F2A220210A5D0F00FAE75C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A1D9210A5D0F00FAE75C /* Generated */,
+				B7F2A216210A5D0F00FAE75C /* Objects */,
+				B7F2A21C210A5D0F00FAE75C /* Templates */,
+				B7F2A21E210A5D0F00FAE75C /* Extensions */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B7F2A225210A5D0F00FAE75C /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A221210A5D0F00FAE75C /* XMLElementParser.swift */,
+				B7F2A222210A5D0F00FAE75C /* XMLElement.swift */,
+				B7F2A223210A5D0F00FAE75C /* XMLEncoder.swift */,
+				B7F2A224210A5D0F00FAE75C /* XMLDecoder.swift */,
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
+		B7F2A32B210A5F0000FAE75C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A32C210A5F0000FAE75C /* ATS_Common.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B7F2A119210A5CB900FAE75C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A12D210A5CBA00FAE75C /* ATS_Client_SDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B7F2A11B210A5CB900FAE75C /* ATS-Client-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F2A130210A5CBA00FAE75C /* Build configuration list for PBXNativeTarget "ATS-Client-SDK" */;
+			buildPhases = (
+				B7F2A117210A5CB900FAE75C /* Sources */,
+				B7F2A118210A5CB900FAE75C /* Frameworks */,
+				B7F2A119210A5CB900FAE75C /* Headers */,
+				B7F2A11A210A5CB900FAE75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ATS-Client-SDK";
+			productName = "ATS-Client-SDK";
+			productReference = B7F2A11C210A5CB900FAE75C /* ATS_Client_SDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7F2A124210A5CBA00FAE75C /* ATS-Client-SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F2A133210A5CBA00FAE75C /* Build configuration list for PBXNativeTarget "ATS-Client-SDKTests" */;
+			buildPhases = (
+				B7F2A121210A5CBA00FAE75C /* Sources */,
+				B7F2A122210A5CBA00FAE75C /* Frameworks */,
+				B7F2A123210A5CBA00FAE75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F2A128210A5CBA00FAE75C /* PBXTargetDependency */,
+			);
+			name = "ATS-Client-SDKTests";
+			productName = "ATS-Client-SDKTests";
+			productReference = B7F2A125210A5CBA00FAE75C /* ATS-Client-SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7F2A113210A5CB900FAE75C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Joshua Monroe";
+				TargetAttributes = {
+					B7F2A11B210A5CB900FAE75C = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
+					};
+					B7F2A124210A5CBA00FAE75C = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
+					};
+					B7F2A248210A5D6200FAE75C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B7F2A116210A5CB900FAE75C /* Build configuration list for PBXProject "ATS-Client-SDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7F2A112210A5CB900FAE75C;
+			productRefGroup = B7F2A11D210A5CB900FAE75C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7F2A11B210A5CB900FAE75C /* ATS-Client-SDK */,
+				B7F2A124210A5CBA00FAE75C /* ATS-Client-SDKTests */,
+				B7F2A248210A5D6200FAE75C /* Sourcery Generate Domain Serialization */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7F2A11A210A5CB900FAE75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A149210A5D0300FAE75C /* generate.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F2A123210A5CBA00FAE75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70F11F2210B4BA900DBB05F /* AutoMockable.stencil in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7F2A24C210A5D6A00FAE75C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# cd ${SOURCE_ROOT}\n./generate.sh";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7F2A117210A5CB900FAE75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A28C210A5E1200FAE75C /* UnitOfMeasureCode.swift in Sources */,
+				B7BBF139210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLSerializable.generated.swift in Sources */,
+				B7F2A25F210A5E1200FAE75C /* CardCircuitStateType.swift in Sources */,
+				B7F2A283210A5E1200FAE75C /* SaleItemType.swift in Sources */,
+				B7F2A292210A5E1C00FAE75C /* XMLParsable.swift in Sources */,
+				B7BBF0E7210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLParsable.generated.swift in Sources */,
+				B7F2A28D210A5E1200FAE75C /* WidthType.swift in Sources */,
+				B7BBF14C210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLSerializable.generated.swift in Sources */,
+				B7F2A277210A5E1200FAE75C /* HeightType.swift in Sources */,
+				B7F2A253210A5DFF00FAE75C /* XMLElementParser.swift in Sources */,
+				B7BBF121210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLParsable.generated.swift in Sources */,
+				B7BBF13F210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLSerializable.generated.swift in Sources */,
+				B7BBF130210B5AAF00BC74CB /* ATSErrorDetail+XMLSerializable.generated.swift in Sources */,
+				B7F2A26D210A5E1200FAE75C /* CountryCode.swift in Sources */,
+				B7BBF150210B5AAF00BC74CB /* ServiceRequest+XMLSerializable.generated.swift in Sources */,
+				B7BBF0F9210B5AAF00BC74CB /* ServiceRequest_POSData+XMLParsable.generated.swift in Sources */,
+				B7BBF12A210B5AAF00BC74CB /* DeviceRequest_Event+XMLSerializable.generated.swift in Sources */,
+				B7F2A279210A5E1200FAE75C /* InputType.swift in Sources */,
+				B7BBF169210B5AAF00BC74CB /* EncryptedCardValueType+XMLSerializable.generated.swift in Sources */,
+				B7BBF142210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLSerializable.generated.swift in Sources */,
+				B7F2A264210A5E1200FAE75C /* CardServiceResponse.swift in Sources */,
+				B7F2A26C210A5E1200FAE75C /* CommandType.swift in Sources */,
+				B7F2A22B210A5D1000FAE75C /* TelegramCoding.swift in Sources */,
+				B7F2A291210A5E1C00FAE75C /* XMLSerializable.swift in Sources */,
+				B7BBF11F210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLParsable.generated.swift in Sources */,
+				B7BBF126210B5AAF00BC74CB /* ATSErrorDetail+XMLParsable.generated.swift in Sources */,
+				B7BBF0F8210B5AAF00BC74CB /* CardServiceResponse_Terminal+XMLParsable.generated.swift in Sources */,
+				B7BBF12D210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLSerializable.generated.swift in Sources */,
+				B7BBF114210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLParsable.generated.swift in Sources */,
+				B7BBF159210B5AAF00BC74CB /* DeviceResponse_EventResult_Acquirer+XMLSerializable.generated.swift in Sources */,
+				B7F2A282210A5E1200FAE75C /* RequestResultType.swift in Sources */,
+				B7BBF132210B5AAF00BC74CB /* TotalAmountType+XMLSerializable.generated.swift in Sources */,
+				B7BBF0FE210B5AAF00BC74CB /* CardValueDRType_CADLuhn+XMLParsable.generated.swift in Sources */,
+				B7BBF15C210B5AAF00BC74CB /* CardServiceResponse_Tender+XMLSerializable.generated.swift in Sources */,
+				B7BBF101210B5AAF00BC74CB /* CardTrack+XMLParsable.generated.swift in Sources */,
+				B7F2A28A210A5E1200FAE75C /* TotalAmountType.swift in Sources */,
+				B7F2A258210A5E1200FAE75C /* AgentOnlineType.swift in Sources */,
+				B7BBF0FB210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLParsable.generated.swift in Sources */,
+				B7F2A27C210A5E1200FAE75C /* MACType.swift in Sources */,
+				B7F2A256210A5DFF00FAE75C /* XMLDecoder.swift in Sources */,
+				B7F2A22D210A5D1000FAE75C /* ATSClient.swift in Sources */,
+				B7BBF11E210B5AAF00BC74CB /* ServiceResponse_Versions_Devices+XMLParsable.generated.swift in Sources */,
+				B7BBF165210B5AAF00BC74CB /* ATSResponse+XMLSerializable.generated.swift in Sources */,
+				B7BBF0FA210B5AAF00BC74CB /* ServiceRequest+XMLParsable.generated.swift in Sources */,
+				B7BBF0FC210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLParsable.generated.swift in Sources */,
+				B7BBF151210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLSerializable.generated.swift in Sources */,
+				B7BBF167210B5AAF00BC74CB /* DeviceRequest_Event_EventData+XMLSerializable.generated.swift in Sources */,
+				B7F2A266210A5E1200FAE75C /* CardValueDRType.swift in Sources */,
+				B7BBF0E6210B5AAF00BC74CB /* ServiceResponse_Submission+XMLParsable.generated.swift in Sources */,
+				B7F2A28F210A5E1C00FAE75C /* ATSMessage.swift in Sources */,
+				B7F2A287210A5E1200FAE75C /* ServiceRequestType.swift in Sources */,
+				B7F2A25E210A5E1200FAE75C /* AuthorisationMethodType.swift in Sources */,
+				B7BBF113210B5AAF00BC74CB /* ATSError+XMLParsable.generated.swift in Sources */,
+				B7BBF116210B5AAF00BC74CB /* EncryptedCardValueType+XMLParsable.generated.swift in Sources */,
+				B7BBF123210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection+XMLParsable.generated.swift in Sources */,
+				B7F2A289210A5E1200FAE75C /* Text.swift in Sources */,
+				B7F2A26F210A5E1200FAE75C /* DataRequiredType.swift in Sources */,
+				B7F2A255210A5DFF00FAE75C /* XMLEncoder.swift in Sources */,
+				B7BBF10B210B5AAF00BC74CB /* DeviceResponse+XMLParsable.generated.swift in Sources */,
+				B7BBF10F210B5AAF00BC74CB /* MACType+XMLParsable.generated.swift in Sources */,
+				B7BBF13B210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLSerializable.generated.swift in Sources */,
+				B7BBF143210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLSerializable.generated.swift in Sources */,
+				B7F2A25D210A5E1200FAE75C /* ATSResponseType.swift in Sources */,
+				B7BBF0F4210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLParsable.generated.swift in Sources */,
+				B7BBF0F7210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLParsable.generated.swift in Sources */,
+				B7F2A278210A5E1200FAE75C /* ICCType.swift in Sources */,
+				B7F2A274210A5E1200FAE75C /* E2EEValues.swift in Sources */,
+				B7BBF0ED210B5AAF00BC74CB /* DeviceRequest_Output+XMLParsable.generated.swift in Sources */,
+				B7BBF141210B5AAF00BC74CB /* ServiceResponse+XMLSerializable.generated.swift in Sources */,
+				B7BBF15E210B5AAF00BC74CB /* DeviceResponse_Input+XMLSerializable.generated.swift in Sources */,
+				B7BBF147210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLSerializable.generated.swift in Sources */,
+				B7BBF164210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLSerializable.generated.swift in Sources */,
+				B7BBF133210B5AAF00BC74CB /* CardValueICCType+XMLSerializable.generated.swift in Sources */,
+				B7F2A27F210A5E1200FAE75C /* OAReversalMode.swift in Sources */,
+				B7F2A262210A5E1200FAE75C /* CardRequestType.swift in Sources */,
+				B7F2A285210A5E1200FAE75C /* SeparatorType.swift in Sources */,
+				B7BBF11B210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLParsable.generated.swift in Sources */,
+				B7F2A269210A5E1200FAE75C /* CardVerificationType.swift in Sources */,
+				B7BBF122210B5AAF00BC74CB /* CardServiceRequest+XMLParsable.generated.swift in Sources */,
+				B7BBF16A210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLSerializable.generated.swift in Sources */,
+				B7BBF0FF210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLParsable.generated.swift in Sources */,
+				B7BBF0E3210B5AAF00BC74CB /* Auto_XMLRoot.generated.swift in Sources */,
+				B7F2A263210A5E1200FAE75C /* CardServiceRequest.swift in Sources */,
+				B7BBF138210B5AAF00BC74CB /* DeviceRequest_Output+XMLSerializable.generated.swift in Sources */,
+				B7F2A254210A5DFF00FAE75C /* XMLElement.swift in Sources */,
+				B7BBF0F1210B5AAF00BC74CB /* DeviceRequest_Input_Command+XMLParsable.generated.swift in Sources */,
+				B7BBF112210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLParsable.generated.swift in Sources */,
+				B7F2A28E210A5E1800FAE75C /* AdditionalResponseType.swift in Sources */,
+				B7BBF0F5210B5AAF00BC74CB /* ATSResponse+XMLParsable.generated.swift in Sources */,
+				B7BBF128210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLParsable.generated.swift in Sources */,
+				B7BBF124210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLParsable.generated.swift in Sources */,
+				B7BBF168210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLSerializable.generated.swift in Sources */,
+				B7BBF0FD210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLParsable.generated.swift in Sources */,
+				B7BBF10D210B5AAF00BC74CB /* CardServiceRequest_OriginalTransaction+XMLParsable.generated.swift in Sources */,
+				B7BBF104210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLParsable.generated.swift in Sources */,
+				B7BBF162210B5AAF00BC74CB /* ServiceRequest_POSData+XMLSerializable.generated.swift in Sources */,
+				B7F2A27E210A5E1200FAE75C /* OARefundOnline.swift in Sources */,
+				B7BBF118210B5AAF00BC74CB /* CardServiceRequest_Loyalty_MOPrule+XMLParsable.generated.swift in Sources */,
+				B7BBF163210B5AAF00BC74CB /* InputValueType+XMLSerializable.generated.swift in Sources */,
+				B7F2A288210A5E1200FAE75C /* ServiceResponse.swift in Sources */,
+				B7F2A275210A5E1200FAE75C /* EncryptedCardValueType.swift in Sources */,
+				B7BBF14A210B5AAF00BC74CB /* SaleItemType+XMLSerializable.generated.swift in Sources */,
+				B7F2A268210A5E1200FAE75C /* CardValueICCType.swift in Sources */,
+				B7F2A26E210A5E1200FAE75C /* CurrencyCode.swift in Sources */,
+				B7BBF144210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed_ProductCode+XMLSerializable.generated.swift in Sources */,
+				B7BBF13D210B5AAF00BC74CB /* ServiceResponse_OriginalHeader+XMLSerializable.generated.swift in Sources */,
+				B7BBF14B210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLSerializable.generated.swift in Sources */,
+				B7BBF152210B5AAF00BC74CB /* CardServiceRequest_Loyalty+XMLSerializable.generated.swift in Sources */,
+				B7BBF12B210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLSerializable.generated.swift in Sources */,
+				B7BBF13A210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLSerializable.generated.swift in Sources */,
+				B7BBF10A210B5AAF00BC74CB /* CardValueICCType+XMLParsable.generated.swift in Sources */,
+				B7F2A271210A5E1200FAE75C /* DeviceRequestType.swift in Sources */,
+				B7BBF15F210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLSerializable.generated.swift in Sources */,
+				B7BBF146210B5AAF00BC74CB /* DeviceResponse+XMLSerializable.generated.swift in Sources */,
+				B7F2A270210A5E1200FAE75C /* DeviceRequest.swift in Sources */,
+				B7BBF131210B5AAF00BC74CB /* CardValueDRType+XMLSerializable.generated.swift in Sources */,
+				B7F2A280210A5E1200FAE75C /* OAReverseOnline.swift in Sources */,
+				B7F2A267210A5E1200FAE75C /* CardValueType.swift in Sources */,
+				B7F2A27B210A5E1200FAE75C /* LanguageCodeType.swift in Sources */,
+				B7F2A27D210A5E1200FAE75C /* OAICCNoTrack2.swift in Sources */,
+				B7BBF0F2210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLParsable.generated.swift in Sources */,
+				B7BBF148210B5AAF00BC74CB /* MACType+XMLSerializable.generated.swift in Sources */,
+				B7BBF0EF210B5AAF00BC74CB /* TotalAmountType+XMLParsable.generated.swift in Sources */,
+				B7F2A281210A5E1200FAE75C /* P2PEValues.swift in Sources */,
+				B7BBF102210B5AAF00BC74CB /* SecureDataFlow+XMLParsable.generated.swift in Sources */,
+				B7BBF16E210B5AAF00BC74CB /* SecureDataFlow+XMLSerializable.generated.swift in Sources */,
+				B7BBF100210B5AAF00BC74CB /* CardValueType+XMLParsable.generated.swift in Sources */,
+				B7BBF117210B5AAF00BC74CB /* DeviceResponse_Output+XMLParsable.generated.swift in Sources */,
+				B7F2A276210A5E1200FAE75C /* EventTypes.swift in Sources */,
+				B7BBF14D210B5AAF00BC74CB /* ICCType+XMLSerializable.generated.swift in Sources */,
+				B7BBF119210B5AAF00BC74CB /* CardValueDRType_Features+XMLParsable.generated.swift in Sources */,
+				B7BBF0E8210B5AAF00BC74CB /* ServiceRequest_PINPadProgramLoad+XMLParsable.generated.swift in Sources */,
+				B7F2A22A210A5D1000FAE75C /* ATSClientDelegate.swift in Sources */,
+				B7BBF12C210B5AAF00BC74CB /* ATSError+XMLSerializable.generated.swift in Sources */,
+				B7BBF12F210B5AAF00BC74CB /* CardServiceRequest+XMLSerializable.generated.swift in Sources */,
+				B7BBF15B210B5AAF00BC74CB /* ServiceResponse_Reconciliation+XMLSerializable.generated.swift in Sources */,
+				B7F2A25C210A5E1200FAE75C /* ATSError.swift in Sources */,
+				B7BBF0E4210B5AAF00BC74CB /* CardValueDRType+XMLParsable.generated.swift in Sources */,
+				B7BBF109210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLParsable.generated.swift in Sources */,
+				B7BBF129210B5AAF00BC74CB /* DeviceRequest+XMLParsable.generated.swift in Sources */,
+				B7BBF155210B5AAF00BC74CB /* CardServiceResponse+XMLSerializable.generated.swift in Sources */,
+				B7F2A272210A5E1200FAE75C /* DeviceResponse.swift in Sources */,
+				B7BBF0F0210B5AAF00BC74CB /* DeviceResponse_Input+XMLParsable.generated.swift in Sources */,
+				B7F2A257210A5E0300FAE75C /* DeviceResponse+success.swift in Sources */,
+				B7F2A28B210A5E1200FAE75C /* TransactionType.swift in Sources */,
+				B7BBF0F6210B5AAF00BC74CB /* DeviceRequest_Input+XMLParsable.generated.swift in Sources */,
+				B7BBF13E210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLSerializable.generated.swift in Sources */,
+				B7BBF153210B5AAF00BC74CB /* P2PEValues+XMLSerializable.generated.swift in Sources */,
+				B7BBF103210B5AAF00BC74CB /* P2PEValues+XMLParsable.generated.swift in Sources */,
+				B7BBF15A210B5AAF00BC74CB /* DeviceResponse_Output+XMLSerializable.generated.swift in Sources */,
+				B7F2A273210A5E1200FAE75C /* DeviceType.swift in Sources */,
+				B7BBF108210B5AAF00BC74CB /* ServiceResponse_Terminal+XMLParsable.generated.swift in Sources */,
+				B7F2A26B210A5E1200FAE75C /* ColorType.swift in Sources */,
+				B7BBF120210B5AAF00BC74CB /* CardServiceResponse_Loyalty+XMLParsable.generated.swift in Sources */,
+				B7BBF0EC210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLParsable.generated.swift in Sources */,
+				B7BBF125210B5AAF00BC74CB /* CardServiceResponse+XMLParsable.generated.swift in Sources */,
+				B7BBF158210B5AAF00BC74CB /* CardServiceResponse_OriginalHeader+XMLSerializable.generated.swift in Sources */,
+				B7BBF16B210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLSerializable.generated.swift in Sources */,
+				B7BBF115210B5AAF00BC74CB /* InputValueType+XMLParsable.generated.swift in Sources */,
+				B7BBF0EB210B5AAF00BC74CB /* ServiceRequest_TotalAmount+XMLParsable.generated.swift in Sources */,
+				B7BBF154210B5AAF00BC74CB /* ServiceResponse_Submission_Failed+XMLSerializable.generated.swift in Sources */,
+				B7BBF161210B5AAF00BC74CB /* CardValueType+XMLSerializable.generated.swift in Sources */,
+				B7BBF11C210B5AAF00BC74CB /* DeviceRequest_Event_EventData_ProductsAllowed+XMLParsable.generated.swift in Sources */,
+				B7BBF0EE210B5AAF00BC74CB /* ServiceResponse_Versions+XMLParsable.generated.swift in Sources */,
+				B7F2A260210A5E1200FAE75C /* CardFeatureType.swift in Sources */,
+				B7BBF110210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLParsable.generated.swift in Sources */,
+				B7BBF12E210B5AAF00BC74CB /* CardServiceRequest_Acquirer+XMLSerializable.generated.swift in Sources */,
+				B7BBF16F210B5AAF00BC74CB /* CardServiceResponse_Tender_Authorisation+XMLSerializable.generated.swift in Sources */,
+				B7F2A261210A5E1200FAE75C /* CardReadType.swift in Sources */,
+				B7BBF10E210B5AAF00BC74CB /* SaleItemType+XMLParsable.generated.swift in Sources */,
+				B7BBF111210B5AAF00BC74CB /* ICCType+XMLParsable.generated.swift in Sources */,
+				B7BBF157210B5AAF00BC74CB /* CardValueDRType_Features+XMLSerializable.generated.swift in Sources */,
+				B7BBF0F3210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyAmount+XMLParsable.generated.swift in Sources */,
+				B7BBF0E5210B5AAF00BC74CB /* ServiceResponse_Authorisation+XMLParsable.generated.swift in Sources */,
+				B7BBF16C210B5AAF00BC74CB /* ServiceResponse_Versions+XMLSerializable.generated.swift in Sources */,
+				B7BBF140210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyApprovalCode+XMLSerializable.generated.swift in Sources */,
+				B7F2A259210A5E1200FAE75C /* AlignmentType.swift in Sources */,
+				B7BBF10C210B5AAF00BC74CB /* DeviceResponse_EventResult_TransactionLimits+XMLParsable.generated.swift in Sources */,
+				B7F2A286210A5E1200FAE75C /* ServiceRequest.swift in Sources */,
+				B7BBF136210B5AAF00BC74CB /* E2EEValues+XMLSerializable.generated.swift in Sources */,
+				B7F2A25A210A5E1200FAE75C /* Amount.swift in Sources */,
+				B7BBF14F210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLSerializable.generated.swift in Sources */,
+				B7BBF16D210B5AAF00BC74CB /* ServiceResponse_Submission_Successful+XMLSerializable.generated.swift in Sources */,
+				B7BBF11D210B5AAF00BC74CB /* DeviceResponse_EventResult_OACentreDetails+XMLParsable.generated.swift in Sources */,
+				B7BBF0E9210B5AAF00BC74CB /* ServiceResponse+XMLParsable.generated.swift in Sources */,
+				B7F2A25B210A5E1200FAE75C /* ATSErrorDetailType.swift in Sources */,
+				B7BBF166210B5AAF00BC74CB /* ServiceResponse_Versions_Devices_Device+XMLSerializable.generated.swift in Sources */,
+				B7BBF107210B5AAF00BC74CB /* DeviceRequest_Output_Buzzer+XMLParsable.generated.swift in Sources */,
+				B7BBF105210B5AAF00BC74CB /* ServiceResponse_Reconciliation_TotalAmount+XMLParsable.generated.swift in Sources */,
+				B7BBF127210B5AAF00BC74CB /* DeviceRequest_Event+XMLParsable.generated.swift in Sources */,
+				B7BBF14E210B5AAF00BC74CB /* ServiceResponse_Submission+XMLSerializable.generated.swift in Sources */,
+				B7F2A265210A5E1200FAE75C /* CardTrack.swift in Sources */,
+				B7BBF160210B5AAF00BC74CB /* CardServiceRequest_Loyalty_LoyaltyCard+XMLSerializable.generated.swift in Sources */,
+				B7BBF135210B5AAF00BC74CB /* DeviceRequest_Output_TextLine+XMLSerializable.generated.swift in Sources */,
+				B7F2A27A210A5E1200FAE75C /* InputValueType.swift in Sources */,
+				B7F2A290210A5E1C00FAE75C /* XMLRoot.swift in Sources */,
+				B7F2A284210A5E1200FAE75C /* SecureDataFlow.swift in Sources */,
+				B7BBF13C210B5AAF00BC74CB /* CardServiceRequest_POSData+XMLSerializable.generated.swift in Sources */,
+				B7BBF134210B5AAF00BC74CB /* DeviceResponse_EventResult+XMLSerializable.generated.swift in Sources */,
+				B7F2A26A210A5E1200FAE75C /* CharStyleType.swift in Sources */,
+				B7BBF0EA210B5AAF00BC74CB /* CardServiceRequest_CardCircuitCollection_CardCircuit+XMLParsable.generated.swift in Sources */,
+				B7BBF149210B5AAF00BC74CB /* CardTrack+XMLSerializable.generated.swift in Sources */,
+				B7BBF11A210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLParsable.generated.swift in Sources */,
+				B7BBF137210B5AAF00BC74CB /* DeviceRequest_Input+XMLSerializable.generated.swift in Sources */,
+				B7BBF156210B5AAF00BC74CB /* DeviceResponse_EventResult_AuthResponse+XMLSerializable.generated.swift in Sources */,
+				B7BBF145210B5AAF00BC74CB /* CardServiceResponse_Loyalty_LoyaltyCard+XMLSerializable.generated.swift in Sources */,
+				B7BBF106210B5AAF00BC74CB /* E2EEValues+XMLParsable.generated.swift in Sources */,
+				B7BBF15D210B5AAF00BC74CB /* DeviceRequest+XMLSerializable.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F2A121210A5CBA00FAE75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A231210A5D1A00FAE75C /* ATSClientTests.swift in Sources */,
+				B70F11F6210B4C7300DBB05F /* MockATSClientDelegate.generated.swift in Sources */,
+				B7F2A230210A5D1A00FAE75C /* TelegramCodingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7F2A128210A5CBA00FAE75C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7F2A11B210A5CB900FAE75C /* ATS-Client-SDK */;
+			targetProxy = B7F2A127210A5CBA00FAE75C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B7F2A12E210A5CBA00FAE75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7F2A12F210A5CBA00FAE75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7F2A131210A5CBA00FAE75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 3;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ATS-Client-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.pgs.ATS-Client-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7F2A132210A5CBA00FAE75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 3;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ATS-Client-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.pgs.ATS-Client-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7F2A134210A5CBA00FAE75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ATS-Client-SDKTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmonroe.ATS-Client-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7F2A135210A5CBA00FAE75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ATS-Client-SDKTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmonroe.ATS-Client-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7F2A24A210A5D6200FAE75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7F2A24B210A5D6200FAE75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7F2A116210A5CB900FAE75C /* Build configuration list for PBXProject "ATS-Client-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F2A12E210A5CBA00FAE75C /* Debug */,
+				B7F2A12F210A5CBA00FAE75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F2A130210A5CBA00FAE75C /* Build configuration list for PBXNativeTarget "ATS-Client-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F2A131210A5CBA00FAE75C /* Debug */,
+				B7F2A132210A5CBA00FAE75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F2A133210A5CBA00FAE75C /* Build configuration list for PBXNativeTarget "ATS-Client-SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F2A134210A5CBA00FAE75C /* Debug */,
+				B7F2A135210A5CBA00FAE75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F2A249210A5D6200FAE75C /* Build configuration list for PBXAggregateTarget "Sourcery Generate Domain Serialization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F2A24A210A5D6200FAE75C /* Debug */,
+				B7F2A24B210A5D6200FAE75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7F2A113210A5CB900FAE75C /* Project object */;
+}

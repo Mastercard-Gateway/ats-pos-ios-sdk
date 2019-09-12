@@ -1,0 +1,12 @@
+sources:
+- Objects
+templates:
+- Templates
+output:
+  path: Generated
+  link:
+    project: '../../ATS-Client-SDK.xcodeproj'
+    target: 'ATS-Client-SDK'
+    # group: ATS-Client-SDK/Domain/Generated
+args:
+  prune: true

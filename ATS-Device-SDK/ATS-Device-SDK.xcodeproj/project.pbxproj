@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7F2A0D5210A5C5D00FAE75C /* ATS_Device_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A0CB210A5C5D00FAE75C /* ATS_Device_SDK.framework */; };
+		B7F2A0DC210A5C5D00FAE75C /* ATS_Device_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F2A0CE210A5C5D00FAE75C /* ATS_Device_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7F2A143210A5CE300FAE75C /* ATSBluetoothAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A142210A5CE200FAE75C /* ATSBluetoothAdapter.swift */; };
+		B7F2A146210A5CEB00FAE75C /* ATSBTAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A144210A5CEB00FAE75C /* ATSBTAdapterTests.swift */; };
+		B7F2A147210A5CEB00FAE75C /* ServerSocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A145210A5CEB00FAE75C /* ServerSocketTests.swift */; };
+		B7F2A320210A5E4F00FAE75C /* BluetoothCardReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A13F210A5CE200FAE75C /* BluetoothCardReader.swift */; };
+		B7F2A321210A5E4F00FAE75C /* ServerSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2A140210A5CE200FAE75C /* ServerSocket.swift */; };
+		B7F2A32A210A5EFB00FAE75C /* ATS_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A329210A5EFB00FAE75C /* ATS_Common.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7F2A0D6210A5C5D00FAE75C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7F2A0C2210A5C5D00FAE75C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7F2A0CA210A5C5D00FAE75C;
+			remoteInfo = "ATS-Device-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7F2A0CB210A5C5D00FAE75C /* ATS_Device_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATS_Device_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F2A0CE210A5C5D00FAE75C /* ATS_Device_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATS_Device_SDK.h; sourceTree = "<group>"; };
+		B7F2A0CF210A5C5D00FAE75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F2A0D4210A5C5D00FAE75C /* ATS-Device-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ATS-Device-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F2A0DB210A5C5D00FAE75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F2A13F210A5CE200FAE75C /* BluetoothCardReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCardReader.swift; sourceTree = "<group>"; };
+		B7F2A140210A5CE200FAE75C /* ServerSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSocket.swift; sourceTree = "<group>"; };
+		B7F2A142210A5CE200FAE75C /* ATSBluetoothAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSBluetoothAdapter.swift; sourceTree = "<group>"; };
+		B7F2A144210A5CEB00FAE75C /* ATSBTAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSBTAdapterTests.swift; sourceTree = "<group>"; };
+		B7F2A145210A5CEB00FAE75C /* ServerSocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSocketTests.swift; sourceTree = "<group>"; };
+		B7F2A329210A5EFB00FAE75C /* ATS_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ATS_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7F2A0C7210A5C5D00FAE75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A32A210A5EFB00FAE75C /* ATS_Common.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F2A0D1210A5C5D00FAE75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A0D5210A5C5D00FAE75C /* ATS_Device_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7F2A0C1210A5C5D00FAE75C = {
+			isa = PBXGroup;
+			children = (
+				B7F2A0CD210A5C5D00FAE75C /* ATS-Device-SDK */,
+				B7F2A0D8210A5C5D00FAE75C /* ATS-Device-SDKTests */,
+				B7F2A0CC210A5C5D00FAE75C /* Products */,
+				B7F2A328210A5EFB00FAE75C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7F2A0CC210A5C5D00FAE75C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A0CB210A5C5D00FAE75C /* ATS_Device_SDK.framework */,
+				B7F2A0D4210A5C5D00FAE75C /* ATS-Device-SDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7F2A0CD210A5C5D00FAE75C /* ATS-Device-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A142210A5CE200FAE75C /* ATSBluetoothAdapter.swift */,
+				B7F2A141210A5CE200FAE75C /* Internal */,
+				B7F2A0CE210A5C5D00FAE75C /* ATS_Device_SDK.h */,
+				B7F2A0CF210A5C5D00FAE75C /* Info.plist */,
+			);
+			path = "ATS-Device-SDK";
+			sourceTree = "<group>";
+		};
+		B7F2A0D8210A5C5D00FAE75C /* ATS-Device-SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A145210A5CEB00FAE75C /* ServerSocketTests.swift */,
+				B7F2A144210A5CEB00FAE75C /* ATSBTAdapterTests.swift */,
+				B7F2A0DB210A5C5D00FAE75C /* Info.plist */,
+			);
+			path = "ATS-Device-SDKTests";
+			sourceTree = "<group>";
+		};
+		B7F2A141210A5CE200FAE75C /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A13F210A5CE200FAE75C /* BluetoothCardReader.swift */,
+				B7F2A140210A5CE200FAE75C /* ServerSocket.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		B7F2A328210A5EFB00FAE75C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A329210A5EFB00FAE75C /* ATS_Common.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B7F2A0C8210A5C5D00FAE75C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A0DC210A5C5D00FAE75C /* ATS_Device_SDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B7F2A0CA210A5C5D00FAE75C /* ATS-Device-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F2A0DF210A5C5D00FAE75C /* Build configuration list for PBXNativeTarget "ATS-Device-SDK" */;
+			buildPhases = (
+				B7F2A0C6210A5C5D00FAE75C /* Sources */,
+				B7F2A0C7210A5C5D00FAE75C /* Frameworks */,
+				B7F2A0C8210A5C5D00FAE75C /* Headers */,
+				B7F2A0C9210A5C5D00FAE75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ATS-Device-SDK";
+			productName = "ATS-Device-SDK";
+			productReference = B7F2A0CB210A5C5D00FAE75C /* ATS_Device_SDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7F2A0D3210A5C5D00FAE75C /* ATS-Device-SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F2A0E2210A5C5D00FAE75C /* Build configuration list for PBXNativeTarget "ATS-Device-SDKTests" */;
+			buildPhases = (
+				B7F2A0D0210A5C5D00FAE75C /* Sources */,
+				B7F2A0D1210A5C5D00FAE75C /* Frameworks */,
+				B7F2A0D2210A5C5D00FAE75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F2A0D7210A5C5D00FAE75C /* PBXTargetDependency */,
+			);
+			name = "ATS-Device-SDKTests";
+			productName = "ATS-Device-SDKTests";
+			productReference = B7F2A0D4210A5C5D00FAE75C /* ATS-Device-SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7F2A0C2210A5C5D00FAE75C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Joshua Monroe";
+				TargetAttributes = {
+					B7F2A0CA210A5C5D00FAE75C = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
+					};
+					B7F2A0D3210A5C5D00FAE75C = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = B7F2A0C5210A5C5D00FAE75C /* Build configuration list for PBXProject "ATS-Device-SDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7F2A0C1210A5C5D00FAE75C;
+			productRefGroup = B7F2A0CC210A5C5D00FAE75C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7F2A0CA210A5C5D00FAE75C /* ATS-Device-SDK */,
+				B7F2A0D3210A5C5D00FAE75C /* ATS-Device-SDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7F2A0C9210A5C5D00FAE75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F2A0D2210A5C5D00FAE75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7F2A0C6210A5C5D00FAE75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A143210A5CE300FAE75C /* ATSBluetoothAdapter.swift in Sources */,
+				B7F2A321210A5E4F00FAE75C /* ServerSocket.swift in Sources */,
+				B7F2A320210A5E4F00FAE75C /* BluetoothCardReader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F2A0D0210A5C5D00FAE75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F2A147210A5CEB00FAE75C /* ServerSocketTests.swift in Sources */,
+				B7F2A146210A5CEB00FAE75C /* ATSBTAdapterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7F2A0D7210A5C5D00FAE75C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7F2A0CA210A5C5D00FAE75C /* ATS-Device-SDK */;
+			targetProxy = B7F2A0D6210A5C5D00FAE75C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B7F2A0DD210A5C5D00FAE75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7F2A0DE210A5C5D00FAE75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7F2A0E0210A5C5D00FAE75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 3;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ATS-Device-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.pgs.ATS-Device-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7F2A0E1210A5C5D00FAE75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 3;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ATS-Device-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.pgs.ATS-Device-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7F2A0E3210A5C5D00FAE75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ATS-Device-SDKTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmonroe.ATS-Device-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7F2A0E4210A5C5D00FAE75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ATS-Device-SDKTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joshmonroe.ATS-Device-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7F2A0C5210A5C5D00FAE75C /* Build configuration list for PBXProject "ATS-Device-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F2A0DD210A5C5D00FAE75C /* Debug */,
+				B7F2A0DE210A5C5D00FAE75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F2A0DF210A5C5D00FAE75C /* Build configuration list for PBXNativeTarget "ATS-Device-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F2A0E0210A5C5D00FAE75C /* Debug */,
+				B7F2A0E1210A5C5D00FAE75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F2A0E2210A5C5D00FAE75C /* Build configuration list for PBXNativeTarget "ATS-Device-SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F2A0E3210A5C5D00FAE75C /* Debug */,
+				B7F2A0E4210A5C5D00FAE75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7F2A0C2210A5C5D00FAE75C /* Project object */;
+}

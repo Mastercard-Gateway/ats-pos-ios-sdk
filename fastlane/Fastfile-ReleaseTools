@@ -1,0 +1,66 @@
+
+projects = [
+  {xcodeproj: "ATS-Common/ATS-Common.xcodeproj", target: "ATS-Common"},
+  {xcodeproj: "ATS-Client-SDK/ATS-Client-SDK.xcodeproj", target: "ATS-Client-SDK"},
+  {xcodeproj: "ATS-Device-SDK/ATS-Device-SDK.xcodeproj", target: "ATS-Device-SDK"},
+  {xcodeproj: "ATSSDK-Sample/ATSSDK-Sample.xcodeproj", target: "ATSSDK-Sample"}
+]
+
+platform :ios do
+  desc "Updates the version number for all frameworks"
+  lane :update_version_number do
+    current = get_version_number(projects[0])
+
+    UI.message "current version is #{current}"
+    type = UI.select("What type of release is this?: ", ["major", "minor", "patch", "other"])
+    if type == "other"
+      version = UI.input("Provide a version number for this release: ")
+      projects.each { |project| increment_version_number(version_number: version, xcodeproj: project[:xcodeproj]) }
+    else
+      projects.each { |project| increment_version_number(bump_type: type, xcodeproj: project[:xcodeproj]) }
+    end
+
+    updated = get_version_number(projects[0])
+    UI.success "Version set to '#{updated}'."
+    updated
+  end
+
+  desc "Updates the build number for all frameworks"
+  lane :update_build_number do
+    buildNum = get_build_number(xcodeproj: projects[0][:xcodeproj])
+    type = UI.select("Current build number is #{buildNum}: ", ["keep", "increment", "other"])
+    case type
+    when "increment"
+      projects.each { |project| increment_build_number(xcodeproj: project[:xcodeproj]) }
+    when "other"
+      buildNum = UI.input("What should the build number be?")
+
+      projects.each { |project| increment_build_number(build_number: buildNum + 1, xcodeproj: project[:xcodeproj]) }
+    else
+      UI.message "keeping version number of #{buildNum}"
+    end
+    buildNum = get_build_number(xcodeproj: projects[0][:xcodeproj])
+
+    UI.success("Build number set to #{buildNum}")
+    buildNum
+  end
+
+  desc "perform all the updates required to cut a release"
+  lane :release_checklist do
+    changeLogPath = "CHANGES.md"
+
+    versionNumber = update_version_number
+    buildNumber = update_build_number
+
+    UI.header "Change Log"
+
+    changes = read_changelog(changelog_path: changeLogPath, section_identifier: '[Unreleased]')
+    UI.header "Unreleased Changes"
+    UI.message "\n#{changes}"
+
+    UI.confirm "Do the above changes look correct?"
+    stamp_changelog(changelog_path: changeLogPath, section_identifier: versionNumber)
+
+    update_docs
+  end
+end

@@ -1,0 +1,5 @@
+scheme("All")
+devices(["iPhone 6"])
+
+clean(true)
+code_coverage(true)

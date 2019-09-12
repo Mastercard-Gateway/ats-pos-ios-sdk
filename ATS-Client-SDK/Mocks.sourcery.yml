@@ -1,0 +1,8 @@
+sources:
+- 'ATS-Client-SDK'
+templates:
+- ATS-Client-SDKTests/Mocks/Templates
+output:
+  path: ATS-Client-SDKTests/Mocks/Generated
+args:
+  prune: true

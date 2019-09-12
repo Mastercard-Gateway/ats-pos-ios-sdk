@@ -7,24 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB26722220BFFE5900D42353 /* ATSSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBEBB9720BFFD9600B0F1D9 /* ATSSDK_iOS.framework */; };
-		AB26722320BFFE5900D42353 /* ATSSDK_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABBEBB9720BFFD9600B0F1D9 /* ATSSDK_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33EB6A3520F4EE67007F5251 /* SelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EB6A3420F4EE67007F5251 /* SelectionTableViewController.swift */; };
+		33EB6A3720F4F1F0007F5251 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EB6A3620F4F1F0007F5251 /* ConfigurationViewController.swift */; };
+		33F1A3B320F74A5F00D10800 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F1A3B220F74A5F00D10800 /* Configuration.swift */; };
+		33F1A3B520F78BD700D10800 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F1A3B420F78BD700D10800 /* OverviewViewController.swift */; };
 		ABBEBB6020BFFBC700B0F1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEBB5F20BFFBC700B0F1D9 /* AppDelegate.swift */; };
-		ABBEBB6220BFFBC700B0F1D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEBB6120BFFBC700B0F1D9 /* ViewController.swift */; };
 		ABBEBB6520BFFBC700B0F1D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBEBB6320BFFBC700B0F1D9 /* Main.storyboard */; };
 		ABBEBB6720BFFBC700B0F1D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABBEBB6620BFFBC700B0F1D9 /* Assets.xcassets */; };
 		ABBEBB6A20BFFBC700B0F1D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBEBB6820BFFBC700B0F1D9 /* LaunchScreen.storyboard */; };
 		ABBEBB7520BFFBC700B0F1D9 /* ATSSDK_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEBB7420BFFBC700B0F1D9 /* ATSSDK_SampleTests.swift */; };
+		B726ECF220F64DBA00324336 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726ECF120F64DBA00324336 /* PaymentViewController.swift */; };
+		B726ECF620F64EB600324336 /* UIViewStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726ECF320F64EB500324336 /* UIViewStyling.swift */; };
+		B726ECF720F64EB600324336 /* UIViewController+KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726ECF420F64EB500324336 /* UIViewController+KeyboardAvoiding.swift */; };
+		B726ECFB20F677B200324336 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726ECFA20F677B200324336 /* UIViewController+Alert.swift */; };
+		B7EA462320F931B900B5ED91 /* PaymentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EA462220F931B900B5ED91 /* PaymentResultViewController.swift */; };
+		B7EA462420F932D400B5ED91 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726ECF520F64EB500324336 /* GradientView.swift */; };
+		B7F2A322210A5EE000FAE75C /* ATS_Client_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A24D210A5DB200FAE75C /* ATS_Client_SDK.framework */; };
+		B7F2A323210A5EE000FAE75C /* ATS_Client_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A24D210A5DB200FAE75C /* ATS_Client_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7F2A324210A5EE000FAE75C /* ATS_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A24F210A5DB200FAE75C /* ATS_Common.framework */; };
+		B7F2A325210A5EE000FAE75C /* ATS_Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A24F210A5DB200FAE75C /* ATS_Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7F2A326210A5EE000FAE75C /* ATS_Device_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A251210A5DB200FAE75C /* ATS_Device_SDK.framework */; };
+		B7F2A327210A5EE000FAE75C /* ATS_Device_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7F2A251210A5DB200FAE75C /* ATS_Device_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AB26722420BFFE5900D42353 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ABBEBB9120BFFD9600B0F1D9 /* ATSSDK-iOS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ABBEBB3820BFFADE00B0F1D9;
-			remoteInfo = "ATSSDK-iOS";
-		};
 		ABBEBB7120BFFBC700B0F1D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ABBEBB5420BFFBC700B0F1D9 /* Project object */;
@@ -32,30 +38,18 @@
 			remoteGlobalIDString = ABBEBB5B20BFFBC700B0F1D9;
 			remoteInfo = "ATSSDK-Sample";
 		};
-		ABBEBB9620BFFD9600B0F1D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ABBEBB9120BFFD9600B0F1D9 /* ATSSDK-iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ABBEBB3920BFFADE00B0F1D9;
-			remoteInfo = "ATSSDK-iOS";
-		};
-		ABBEBB9820BFFD9600B0F1D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ABBEBB9120BFFD9600B0F1D9 /* ATSSDK-iOS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ABBEBB4220BFFADE00B0F1D9;
-			remoteInfo = "ATSSDK-iOSTests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AB26722620BFFE5A00D42353 /* Embed Frameworks */ = {
+		B7122DE1210617F900182A3A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AB26722320BFFE5900D42353 /* ATSSDK_iOS.framework in Embed Frameworks */,
+				B7F2A325210A5EE000FAE75C /* ATS_Common.framework in Embed Frameworks */,
+				B7F2A327210A5EE000FAE75C /* ATS_Device_SDK.framework in Embed Frameworks */,
+				B7F2A323210A5EE000FAE75C /* ATS_Client_SDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,9 +57,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		33EB6A3420F4EE67007F5251 /* SelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewController.swift; sourceTree = "<group>"; };
+		33EB6A3620F4F1F0007F5251 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		33F1A3B220F74A5F00D10800 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		33F1A3B420F78BD700D10800 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		ABBEBB5C20BFFBC700B0F1D9 /* ATSSDK-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ATSSDK-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABBEBB5F20BFFBC700B0F1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABBEBB6120BFFBC700B0F1D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABBEBB6420BFFBC700B0F1D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABBEBB6620BFFBC700B0F1D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABBEBB6920BFFBC700B0F1D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,7 +70,16 @@
 		ABBEBB7020BFFBC700B0F1D9 /* ATSSDK-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ATSSDK-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABBEBB7420BFFBC700B0F1D9 /* ATSSDK_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSSDK_SampleTests.swift; sourceTree = "<group>"; };
 		ABBEBB7620BFFBC700B0F1D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABBEBB9120BFFD9600B0F1D9 /* ATSSDK-iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "ATSSDK-iOS.xcodeproj"; path = "../ATSSDK-iOS/ATSSDK-iOS.xcodeproj"; sourceTree = "<group>"; };
+		B726ECF120F64DBA00324336 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		B726ECF320F64EB500324336 /* UIViewStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewStyling.swift; sourceTree = "<group>"; };
+		B726ECF420F64EB500324336 /* UIViewController+KeyboardAvoiding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardAvoiding.swift"; sourceTree = "<group>"; };
+		B726ECF520F64EB500324336 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		B726ECFA20F677B200324336 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		B767F30820D3390D0054682A /* ATSSDK-Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ATSSDK-Sample.entitlements"; sourceTree = "<group>"; };
+		B7EA462220F931B900B5ED91 /* PaymentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResultViewController.swift; sourceTree = "<group>"; };
+		B7F2A24D210A5DB200FAE75C /* ATS_Client_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ATS_Client_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F2A24F210A5DB200FAE75C /* ATS_Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ATS_Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F2A251210A5DB200FAE75C /* ATS_Device_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ATS_Device_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB26722220BFFE5900D42353 /* ATSSDK_iOS.framework in Frameworks */,
+				B7F2A324210A5EE000FAE75C /* ATS_Common.framework in Frameworks */,
+				B7F2A326210A5EE000FAE75C /* ATS_Device_SDK.framework in Frameworks */,
+				B7F2A322210A5EE000FAE75C /* ATS_Client_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +109,7 @@
 				ABBEBB5E20BFFBC700B0F1D9 /* ATSSDK-Sample */,
 				ABBEBB7320BFFBC700B0F1D9 /* ATSSDK-SampleTests */,
 				ABBEBB5D20BFFBC700B0F1D9 /* Products */,
-				ABBEBB9120BFFD9600B0F1D9 /* ATSSDK-iOS.xcodeproj */,
+				B7FA2D5120C7281B0034821E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,12 +125,19 @@
 		ABBEBB5E20BFFBC700B0F1D9 /* ATSSDK-Sample */ = {
 			isa = PBXGroup;
 			children = (
-				ABBEBB5F20BFFBC700B0F1D9 /* AppDelegate.swift */,
-				ABBEBB6120BFFBC700B0F1D9 /* ViewController.swift */,
+				B767F30820D3390D0054682A /* ATSSDK-Sample.entitlements */,
 				ABBEBB6320BFFBC700B0F1D9 /* Main.storyboard */,
 				ABBEBB6620BFFBC700B0F1D9 /* Assets.xcassets */,
 				ABBEBB6820BFFBC700B0F1D9 /* LaunchScreen.storyboard */,
 				ABBEBB6B20BFFBC700B0F1D9 /* Info.plist */,
+				ABBEBB5F20BFFBC700B0F1D9 /* AppDelegate.swift */,
+				33F1A3B220F74A5F00D10800 /* Configuration.swift */,
+				33F1A3B420F78BD700D10800 /* OverviewViewController.swift */,
+				33EB6A3620F4F1F0007F5251 /* ConfigurationViewController.swift */,
+				33EB6A3420F4EE67007F5251 /* SelectionTableViewController.swift */,
+				B726ECF120F64DBA00324336 /* PaymentViewController.swift */,
+				B7EA462220F931B900B5ED91 /* PaymentResultViewController.swift */,
+				B726ECF920F64EBE00324336 /* View Utilities */,
 			);
 			path = "ATSSDK-Sample";
 			sourceTree = "<group>";
@@ -136,13 +151,25 @@
 			path = "ATSSDK-SampleTests";
 			sourceTree = "<group>";
 		};
-		ABBEBB9220BFFD9600B0F1D9 /* Products */ = {
+		B726ECF920F64EBE00324336 /* View Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				ABBEBB9720BFFD9600B0F1D9 /* ATSSDK_iOS.framework */,
-				ABBEBB9920BFFD9600B0F1D9 /* ATSSDK-iOSTests.xctest */,
+				B726ECF520F64EB500324336 /* GradientView.swift */,
+				B726ECF420F64EB500324336 /* UIViewController+KeyboardAvoiding.swift */,
+				B726ECF320F64EB500324336 /* UIViewStyling.swift */,
+				B726ECFA20F677B200324336 /* UIViewController+Alert.swift */,
 			);
-			name = Products;
+			path = "View Utilities";
+			sourceTree = "<group>";
+		};
+		B7FA2D5120C7281B0034821E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2A24D210A5DB200FAE75C /* ATS_Client_SDK.framework */,
+				B7F2A24F210A5DB200FAE75C /* ATS_Common.framework */,
+				B7F2A251210A5DB200FAE75C /* ATS_Device_SDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,12 +182,11 @@
 				ABBEBB5820BFFBC700B0F1D9 /* Sources */,
 				ABBEBB5920BFFBC700B0F1D9 /* Frameworks */,
 				ABBEBB5A20BFFBC700B0F1D9 /* Resources */,
-				AB26722620BFFE5A00D42353 /* Embed Frameworks */,
+				B7122DE1210617F900182A3A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AB26722520BFFE5900D42353 /* PBXTargetDependency */,
 			);
 			name = "ATSSDK-Sample";
 			productName = "ATSSDK-Sample";
@@ -192,15 +218,25 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Joyce, Andrew";
 				TargetAttributes = {
 					ABBEBB5B20BFFBC700B0F1D9 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					ABBEBB6F20BFFBC700B0F1D9 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ABBEBB5B20BFFBC700B0F1D9;
 					};
@@ -217,12 +253,6 @@
 			mainGroup = ABBEBB5320BFFBC700B0F1D9;
 			productRefGroup = ABBEBB5D20BFFBC700B0F1D9 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = ABBEBB9220BFFD9600B0F1D9 /* Products */;
-					ProjectRef = ABBEBB9120BFFD9600B0F1D9 /* ATSSDK-iOS.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				ABBEBB5B20BFFBC700B0F1D9 /* ATSSDK-Sample */,
@@ -230,23 +260,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		ABBEBB9720BFFD9600B0F1D9 /* ATSSDK_iOS.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ATSSDK_iOS.framework;
-			remoteRef = ABBEBB9620BFFD9600B0F1D9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ABBEBB9920BFFD9600B0F1D9 /* ATSSDK-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "ATSSDK-iOSTests.xctest";
-			remoteRef = ABBEBB9820BFFD9600B0F1D9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ABBEBB5A20BFFBC700B0F1D9 /* Resources */ = {
@@ -273,8 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABBEBB6220BFFBC700B0F1D9 /* ViewController.swift in Sources */,
+				33F1A3B320F74A5F00D10800 /* Configuration.swift in Sources */,
+				33F1A3B520F78BD700D10800 /* OverviewViewController.swift in Sources */,
 				ABBEBB6020BFFBC700B0F1D9 /* AppDelegate.swift in Sources */,
+				B726ECF720F64EB600324336 /* UIViewController+KeyboardAvoiding.swift in Sources */,
+				B726ECF620F64EB600324336 /* UIViewStyling.swift in Sources */,
+				B7EA462320F931B900B5ED91 /* PaymentResultViewController.swift in Sources */,
+				33EB6A3520F4EE67007F5251 /* SelectionTableViewController.swift in Sources */,
+				33EB6A3720F4F1F0007F5251 /* ConfigurationViewController.swift in Sources */,
+				B726ECF220F64DBA00324336 /* PaymentViewController.swift in Sources */,
+				B726ECFB20F677B200324336 /* UIViewController+Alert.swift in Sources */,
+				B7EA462420F932D400B5ED91 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +311,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AB26722520BFFE5900D42353 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ATSSDK-iOS";
-			targetProxy = AB26722420BFFE5900D42353 /* PBXContainerItemProxy */;
-		};
 		ABBEBB7220BFFBC700B0F1D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ABBEBB5B20BFFBC700B0F1D9 /* ATSSDK-Sample */;
@@ -335,6 +352,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -342,6 +360,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -352,6 +371,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -392,6 +412,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -399,6 +420,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -409,6 +431,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -432,12 +455,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F87RSB75AS;
 				INFOPLIST_FILE = "ATSSDK-Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.gateway.ATSSDK-iOS-Sample.ATSSDK-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.pgs.ats-sample-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -446,12 +473,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F87RSB75AS;
 				INFOPLIST_FILE = "ATSSDK-Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.gateway.ATSSDK-iOS-Sample.ATSSDK-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.pgs.ats-sample-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -466,7 +497,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.gateway.ATSSDK-iOS-Sample.ATSSDK-SampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATSSDK-Sample.app/ATSSDK-Sample";
 			};
@@ -482,7 +513,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.gateway.ATSSDK-iOS-Sample.ATSSDK-SampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATSSDK-Sample.app/ATSSDK-Sample";
 			};

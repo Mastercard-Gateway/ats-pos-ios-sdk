@@ -1,0 +1,6 @@
+# Domain Files
+- ATS-Client-SDK/ATS-Client-SDK/Domain/Objects
++ ATS-Client-SDK/ATS-Client-SDK/Domain/Objects/Common
+# Generated Files
+- ATS-Client-SDK/ATS-Client-SDK/Domain/Generated
+- .*generated.swift
