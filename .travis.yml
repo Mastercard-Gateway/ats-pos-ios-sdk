@@ -4,10 +4,10 @@ branches:
  only:
  - master
 
-xcode_project: ATSSDK-Sample.xcodeproj
-xcode_scheme: ATSSDK-Sample
+xcode_workspace: ATSSDK-iOS.xcworkspace
+xcode_scheme: All
 osx_image: xcode10.3
 xcode_sdk: iphonesimulator12.4
 
 script:
-- xcodebuild clean build test -workspace ATSSDK-iOS.xcworkspace -scheme All -destination "platform=iOS Simulator,name=iPhone X”
+- xcodebuild clean build test -workspace ATSSDK-iOS.xcworkspace -scheme All -destination "platform=iOS Simulator,name=iPhone X"
